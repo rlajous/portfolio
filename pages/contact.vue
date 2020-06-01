@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container column center">
     <h1 class="title">
       Contact Me
     </h1>
@@ -8,8 +8,8 @@
       <br>
       Feel free to Contact me any time
     </h2>
-    <div class="content">
-      <form action="" class="form">
+    <div class="content row space-around">
+      <form action="" class="form column end">
         <input
           class="input"
           type='text'
@@ -43,7 +43,7 @@
           Send Now
         </button>
       </form>
-      <div class="info">
+      <div class="info column">
         <p class="info-title">
           You Can also Send Me Message Via
         </p>
@@ -55,7 +55,7 @@
             /rlajous
           </span>
         </a> -->
-        <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link" target="_blank">
+        <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank">
           <picture>
             <img src="~/assets/img/linkedin-color.png" alt="My Logo, a tree inside a circle" class="logo">
           </picture>
@@ -178,10 +178,6 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   .title {
     // width: 626px;
     height: 166px;
@@ -214,16 +210,10 @@ export default {
   }
 
   .content {
-    display: flex;
-    flex-direction: row;
     width: 100%;
-    justify-content: space-around;
     margin-bottom: 10%;
 
     .form {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
       width: 674px;
 
       .input {
@@ -283,9 +273,6 @@ export default {
     }
 
     .info {
-      display: flex;
-      flex-direction: column;
-
       .info-title {
         // width: 657px;
         height: 53px;
@@ -302,9 +289,6 @@ export default {
       }
 
       .link {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         margin-bottom: 30px;
         text-decoration: none;
 

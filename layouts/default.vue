@@ -16,7 +16,9 @@ export default Vue.extend({
 })
 </script>
 
-<style>
+<style lang="scss">
+@import '~/assets/scss/display.scss';
+
 :root {
   --soft-green: #6ace89;
   --black: #000000;
