@@ -269,6 +269,7 @@ export default {
         letter-spacing: normal;
         text-align: center;
         color: var(--white);
+        box-shadow: 5px 10px 10px 0 var(--black-16);
       }
     }
 

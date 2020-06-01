@@ -93,6 +93,7 @@
       letter-spacing: normal;
       text-align: center;
       color: white;
+      box-shadow: 5px 10px 10px 0 var(--black-16);
     }
   }
 }
