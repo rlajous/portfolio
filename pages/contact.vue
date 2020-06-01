@@ -87,7 +87,7 @@ export default {
     async sendEmail() {
       const { name, surname, email, message } = this
       const ok = await await this.$axios.$post(
-        `https://us-central1-contacto-landing.cloudfunctions.net/sendMail?name=${name}&email=${email}&message=${message}`
+        `${process.env.MAIL}/sendMail?name=${name}&email=${email}&message=${message}`
       )
       if ( ok === 'Sended') {
         // show a message sended
