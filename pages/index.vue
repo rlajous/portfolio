@@ -40,13 +40,96 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
+import { page } from 'vue-analytics'
 
-export default Vue.extend({
-  components: {
+export default {
+  name: 'Home',
+  methods: {
+    track() {
+      page('/')
+    }
+  },
+  head() {
+    return {
+      title: 'Navarro Lajous',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: ''
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            ''
+        },
+        {
+          hid: 'title',
+          name: 'title',
+          content: ''
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: ''
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: ''
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: ''
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: ''
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: ''
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: ''
+        },
+        {
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          hid: 'twitter:url',
+          property: 'twitter:url',
+          content: ''
+        },
+        {
+          hid: 'twitter:title',
+          property: 'twitter:title',
+          content: ''
+        },
+        {
+          hid: 'twitter:description',
+          property: 'twitter:description',
+          content: ''
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: ''
+        }
+      ]
+    }
   }
-})
+}
 </script>
 
 <style lang="scss" scoped>
@@ -69,7 +152,7 @@ export default Vue.extend({
     position: relative;
     // width: 546px;
     // height: 122px;
-    // font-family: Futura;
+    // font-family: Futura XBlk BT;
     font-size: 4.3rem;
     font-weight: bold;
     font-stretch: normal;
