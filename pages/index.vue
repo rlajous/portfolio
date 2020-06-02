@@ -67,10 +67,10 @@ export default Vue.extend({
 
   .title {
     position: relative;
-    width: 546px;
+    // width: 546px;
     // height: 122px;
     // font-family: Futura;
-    font-size: 70px;
+    font-size: 4.3rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -93,17 +93,17 @@ export default Vue.extend({
 
   .subtitle {
     // width: 258px;
-    height: 40px;
-    // font-family: FuturaLtBT;
-    font-size: 30px;
+    height: 2.5rem;
+    font-family: Futura Lt BT;
+    font-size: 1.8rem;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.33;
+    line-height: 2.5rem;
     letter-spacing: normal;
     text-align: left;
     color: var(--black);
-    margin-bottom: 90px;
+    margin-bottom: 5.6rem;
   }
 
   .description {
@@ -117,7 +117,7 @@ export default Vue.extend({
       height: 166px;
       opacity: 0.1;
       // font-family: Impact;
-      font-size: 136px;
+      font-size: 8.5rem;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -131,7 +131,7 @@ export default Vue.extend({
       width: 868px;
       height: 216px;
       // font-family: Futura;
-      font-size: 40px;
+      font-size: 2.5rem;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
@@ -151,7 +151,7 @@ export default Vue.extend({
       border-radius: 10px;
       box-shadow: 5px 10px 10px 0 var(--black-16);
       // font-family: FuturaHvBT;
-      font-size: 25px;
+      font-size: 1.5rem;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
