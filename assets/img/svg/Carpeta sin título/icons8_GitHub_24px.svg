@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 24 24">
+      <image width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABsUlEQVRIDd2UwS4DQRjHt63ioleJODngrm7eAE20qJfwBiQeoJK6uxCJxK0nLyDxBE7aSOhBiIQ0jrV+XzsznZ2d3aU3Nv/ffjPf9/92urO7DYJ/fYRhWIRdaEEXtDoMLmAHCmNtAo01kAsRUtWmuv7jRTAX4AR+oy/MDchlLoTpFMZVI3UBrirbQjBaYST77NuqtqqVibY2vIvgmIInsDUhZhIlWIM5hYxLqiYvAmkj+THTUotAuQ6uZiMmz4QGWZQQUVVb83pA3AJb90x6kKU3DOIlGG2bkR6wfhtsbepaVqSpCrbuYj1Ue2BrJmZKSNAkz4hg9K6t9hYVdVLFUMVxgrmWvUDXuZL/dXNMaup6n1V+FLi5K7D1wmRp5PCPxAOvYOsy5qa6B64+SRzAgtsgOTgE8RAiqrv+gLJ8MA/h8NgnXIPWmdtA4Rx8eiQ56foHcwo1EH1wmocbkPHiwGCdyC+DT/FvwOqTOzlWXUdByoEnD66aKS3DEh05kL9eQnjLqTWsxM/UbDWZ5OKuhAzmCnSgn2CRu+1T70AlyZOap1EefDnJRH0VzEeV5Pvb+W/HcRDBZ0w3HQAAAABJRU5ErkJggg=="/>
+    </pattern>
+  </defs>
+  <rect id="icons8_GitHub_24px" width="40" height="40" fill="url(#pattern)"/>
+</svg>
