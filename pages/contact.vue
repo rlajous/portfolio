@@ -90,8 +90,12 @@ export default {
         `${process.env.MAIL}/sendMail?name=${name}&email=${email}&message=${message}`
       )
       if ( ok === 'Sended') {
-        // show a message sended
+        this.$modal.show('Success')
       }
+      else {
+        this.$modal.show('Error')
+      }
+      // console.log(this.$modal)
     }
   },
   head() {

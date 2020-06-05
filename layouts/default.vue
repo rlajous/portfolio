@@ -2,16 +2,22 @@
   <div>
     <Nav />
     <nuxt />
+    <Error />
+    <Success />
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import Nav from '~/components/Nav.vue'
+import Error from '~/components/modals/Error.vue'
+import Success from '~/components/modals/Success.vue'
 
 export default Vue.extend({
   components: {
-    Nav
+    Nav,
+    Success,
+    Error
   }
 })
 </script>
@@ -19,7 +25,6 @@ export default Vue.extend({
 <style lang="scss">
 @import '~/assets/scss/display.scss';
 @import '~/assets/fonts/stylesheet.css';
-
 :root {
   --soft-green: #6ace89;
   --black: #000000;
