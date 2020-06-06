@@ -93,5 +93,4 @@ node_modules
 dist
 .nuxt
 .awspublish*
-deploy.sh
 .awspublish-navarrolajous.com
