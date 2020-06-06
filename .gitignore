@@ -92,5 +92,6 @@ sw.*
 node_modules
 dist
 .nuxt
-.awspublish
+.awspublish*
 deploy.sh
+.awspublish-navarrolajous.com
