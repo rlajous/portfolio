@@ -158,6 +158,7 @@ export default {
     height: 32rem;
     left: -10.25rem;
     transform: rotate(31deg);
+    z-index: -1;
   }
 
   .portrait {

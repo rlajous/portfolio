@@ -1,4 +1,5 @@
 @font-face {
+    font-display: swap;
     font-family: 'Futura MdCn BT';
     src: url('FuturaBT-MediumCondensed.eot');
     src: url('FuturaBT-MediumCondensed.eot?#iefix') format('embedded-opentype'),
@@ -11,6 +12,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Bk BT';
     src: url('FuturaBT-BookItalic.eot');
     src: url('FuturaBT-BookItalic.eot?#iefix') format('embedded-opentype'),
@@ -23,6 +25,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Md BT';
     src: url('FuturaBT-MediumItalic.eot');
     src: url('FuturaBT-MediumItalic.eot?#iefix') format('embedded-opentype'),
@@ -35,6 +38,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura LtCn BT';
     src: url('FuturaBT-LightCondensed.eot');
     src: url('FuturaBT-LightCondensed.eot?#iefix') format('embedded-opentype'),
@@ -47,6 +51,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Md BT';
     src: url('FuturaBT-Medium.eot');
     src: url('FuturaBT-Medium.eot?#iefix') format('embedded-opentype'),
@@ -59,6 +64,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura';
     src: url('Futura-Bold.eot');
     src: url('Futura-Bold.eot?#iefix') format('embedded-opentype'),
@@ -71,6 +77,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Bk BT';
     src: url('FuturaBT-Book.eot');
     src: url('FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
@@ -83,6 +90,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura LT';
     src: url('FuturaLT-Heavy.eot');
     src: url('FuturaLT-Heavy.eot?#iefix') format('embedded-opentype'),
@@ -95,6 +103,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Md BT';
     src: url('FuturaBT-BoldItalic.eot');
     src: url('FuturaBT-BoldItalic.eot?#iefix') format('embedded-opentype'),
@@ -107,6 +116,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Lt BT';
     src: url('FuturaBT-Light.eot');
     src: url('FuturaBT-Light.eot?#iefix') format('embedded-opentype'),
@@ -119,6 +129,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Lt BT';
     src: url('FuturaBT-LightItalic.eot');
     src: url('FuturaBT-LightItalic.eot?#iefix') format('embedded-opentype'),
@@ -131,6 +142,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura LT';
     src: url('FuturaLT-Heavy_1.eot');
     src: url('FuturaLT-Heavy_1.eot?#iefix') format('embedded-opentype'),
@@ -143,6 +155,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura XBlk BT';
     src: url('FuturaBT-ExtraBlack.eot');
     src: url('FuturaBT-ExtraBlack.eot?#iefix') format('embedded-opentype'),
@@ -155,6 +168,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura BdCn BT';
     src: url('FuturaBT-BoldCondensed.eot');
     src: url('FuturaBT-BoldCondensed.eot?#iefix') format('embedded-opentype'),
@@ -167,6 +181,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura';
     src: url('Futura-Bold_1.eot');
     src: url('Futura-Bold_1.eot?#iefix') format('embedded-opentype'),
@@ -179,6 +194,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Hv BT';
     src: url('FuturaBT-Heavy.eot');
     src: url('FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),
@@ -191,6 +207,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura XBlkCnIt BT';
     src: url('FuturaBT-ExtraBlackCondItalic.eot');
     src: url('FuturaBT-ExtraBlackCondItalic.eot?#iefix') format('embedded-opentype'),
@@ -203,6 +220,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Hv BT';
     src: url('FuturaBT-HeavyItalic.eot');
     src: url('FuturaBT-HeavyItalic.eot?#iefix') format('embedded-opentype'),
@@ -215,6 +233,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura Hv BT';
     src: url('FuturaBT-Heavy_1.eot');
     src: url('FuturaBT-Heavy_1.eot?#iefix') format('embedded-opentype'),
@@ -227,6 +246,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura XBlk BT';
     src: url('FuturaBT-ExtraBlack_1.eot');
     src: url('FuturaBT-ExtraBlack_1.eot?#iefix') format('embedded-opentype'),
@@ -239,6 +259,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura';
     src: url('Futura-Black-Bold.eot');
     src: url('Futura-Black-Bold.eot?#iefix') format('embedded-opentype'),
@@ -251,6 +272,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Futura';
     src: url('Futura-CondensedLight.eot');
     src: url('Futura-CondensedLight.eot?#iefix') format('embedded-opentype'),
