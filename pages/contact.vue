@@ -67,7 +67,7 @@
             /rlajous
           </span>
         </a> -->
-        <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank" rel="noreferrer noopener">
+        <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank" rel="nofollow noreferrer noopener">
           <picture>
             <img src="~/assets/img/linkedin-color.png" alt="My Logo, a tree inside a circle" class="logo">
           </picture>

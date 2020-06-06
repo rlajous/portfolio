@@ -37,13 +37,13 @@
       </nuxt-link>
     </div>
     <div class="social row space-between">
-      <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank" rel="noreferrer noopener">
+      <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank" rel="nofollow noreferrer noopener">
         <picture>
           <source srcset="~/assets/img/linkedin-color.webp" type="image/webp">
           <img src="~/assets/img/linkedin-color.png" alt="My Logo, a tree inside a circle" class="logo">
         </picture>
       </a>
-      <a href="https://github.com/rlajous" class="link row middle" target="_blank" rel="noreferrer noopener">
+      <a href="https://github.com/rlajous" class="link row middle" target="_blank" rel="nofollow noreferrer noopener">
         <picture>
           <source srcset="~/assets/img/github-color.webp" type="image/webp">
           <img src="~/assets/img/github-color.png" alt="My Logo, a tree inside a circle" class="logo">
@@ -87,7 +87,7 @@ export default {
         {
           hid: 'og:type',
           property: 'og:type',
-          content: ''
+          content: 'website'
         },
         {
           hid: 'og:site_name',
@@ -97,17 +97,17 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: ''
+          content: 'https://navarrolajous.com/'
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: ''
+          content: 'Navarro Lajous'
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: ''
+          content: 'Turn Your Ideas into Reality with me'
         },
         {
           hid: 'og:image',
@@ -122,17 +122,17 @@ export default {
         {
           hid: 'twitter:url',
           property: 'twitter:url',
-          content: ''
+          content: 'https://navarrolajous.com/'
         },
         {
           hid: 'twitter:title',
           property: 'twitter:title',
-          content: ''
+          content: 'Navarro Lajous'
         },
         {
           hid: 'twitter:description',
           property: 'twitter:description',
-          content: ''
+          content: 'Turn Your Ideas into Reality with me'
         },
         {
           hid: 'twitter:image',

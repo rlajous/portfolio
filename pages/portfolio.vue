@@ -11,7 +11,7 @@
         <a
           href="https://nuxtjs.org/"
           target="_blank"
-          rel="noreferrer noopener"
+          rel="nofollow noreferrer noopener"
           class="button--green"
         >
           Documentation
@@ -20,7 +20,7 @@
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey"
-          rel="noreferrer noopener"
+          rel="nofollow noreferrer noopener"
         >
           GitHub
         </a>
