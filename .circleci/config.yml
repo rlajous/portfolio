@@ -22,4 +22,4 @@ jobs:
             - ./node_modules
       - run:
           name: build-project
-          command: ./deploy.sh
+          command: npm run deploy
