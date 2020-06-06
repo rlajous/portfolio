@@ -56,7 +56,7 @@ html {
   margin: 0;
 }
 
-* {
-  font-size: 16px;
+html {
+  font-size: 0.8vw;
 }
 </style>

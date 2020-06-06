@@ -10,25 +10,30 @@
       Skills
     </h2>
     <div class="row wrap">
-      <div class="card column center">
-        <div class="icon column">
-          <picture class="image">
-            <img src="~/assets/img/github-color.png" alt="Portait of myself" class="image">
-          </picture>
+      <div class="relative">
+        <picture>
+          <img src="~/assets/img/svg/Polygon 16.svg" alt="background image" class="polygon absolute">
+        </picture>
+        <div class="card column center relative">
+          <div class="icon column">
+            <picture class="image">
+              <img src="~/assets/img/github-color.png" alt="Portait of myself" class="image">
+            </picture>
+          </div>
+          <p class="name">
+            nuxt JS
+          </p>
+          <hr class="divider">
+          <p class="description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          </p>
+          <p class="experience-title">
+            Experiance
+          </p>
+          <p class="experience">
+            7 month
+          </p>
         </div>
-        <p class="name">
-          nuxt JS
-        </p>
-        <hr class="divider">
-        <p class="description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry
-        </p>
-        <p class="experience-title">
-          Experiance
-        </p>
-        <p class="experience">
-          7 month
-        </p>
       </div>
     </div>
   </div>
@@ -156,6 +161,13 @@ export default {
   letter-spacing: normal;
   text-align: center;
   color: var(--black);
+}
+
+.polygon {
+    width: 800.7px;
+    top: -18rem;
+    left: -18rem;
+    transform: rotate(31deg);
 }
 
 .card {

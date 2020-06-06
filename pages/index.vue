@@ -1,9 +1,11 @@
 <template>
   <div class="content column">
     <picture>
+      <source srcset="~/assets/img/portrait.webp" type="image/webp">
       <img src="~/assets/img/portrait.png" alt="Portait of myself" class="portrait">
     </picture>
     <picture>
+      <!-- <source srcset="~/assets/img/portrait.webp" type="image/webp"> -->
       <img src="~/assets/img/svg/Polygon 7.svg" alt="background image" class="background-image">
     </picture>
     <div class="relative">
@@ -11,6 +13,7 @@
         Rodrigo Lajous
       </h1>
       <picture>
+        <!-- <source srcset="~/assets/img/portrait.webp" type="image/webp"> -->
         <img src="~/assets/img/svg/Group 5.svg" alt="background image" class="absolute underline">
       </picture>
     </div>
@@ -34,13 +37,15 @@
       </nuxt-link>
     </div>
     <div class="social row space-between">
-      <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank">
+      <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank" rel="noreferrer noopener">
         <picture>
+          <source srcset="~/assets/img/linkedin-color.webp" type="image/webp">
           <img src="~/assets/img/linkedin-color.png" alt="My Logo, a tree inside a circle" class="logo">
         </picture>
       </a>
-      <a href="https://github.com/rlajous" class="link row middle" target="_blank">
+      <a href="https://github.com/rlajous" class="link row middle" target="_blank" rel="noreferrer noopener">
         <picture>
+          <source srcset="~/assets/img/github-color.webp" type="image/webp">
           <img src="~/assets/img/github-color.png" alt="My Logo, a tree inside a circle" class="logo">
         </picture>
       </a>
@@ -66,18 +71,18 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: ''
+          content: 'Turn Your Ideas into Reality with me'
         },
         {
           hid: 'keywords',
           name: 'keywords',
           content:
-            ''
+            'web developer'
         },
         {
           hid: 'title',
           name: 'title',
-          content: ''
+          content: 'Navarro Lajous'
         },
         {
           hid: 'og:type',
@@ -87,7 +92,7 @@ export default {
         {
           hid: 'og:site_name',
           property: 'og:site_name',
-          content: ''
+          content: 'Navarro Lajous'
         },
         {
           hid: 'og:url',
@@ -143,7 +148,7 @@ export default {
 <style lang="scss" scoped>
 .content {
   position: relative;
-  height: calc( 100vh - 120px);
+  height: calc( 100vh - 7.5rem);
   overflow: hidden;
   padding: 2.5% 10%;
 
@@ -157,10 +162,10 @@ export default {
 
   .portrait {
     position: absolute;
-    bottom: -200px;
-    right: -200px;
-    width: 983px;
-    height: 916.8px;
+    bottom: -12.5rem;
+    right: -12.5rem;
+    width: 61.5rem;
+    height: 58rem;
     object-fit: contain;
   }
 
@@ -177,12 +182,12 @@ export default {
     letter-spacing: normal;
     text-align: left;
     color: var(--soft-blue);
-    margin-bottom: 70px;
+    margin-bottom: 4.3rem;
   }
 
   .underline {
     bottom: 2rem;
-    height: 23px;
+    height: 1.5rem;
   }
 
   .subtitle {
@@ -205,10 +210,10 @@ export default {
 
     .background {
       position: absolute;
-      top: -80px;
-      left: -10px;
+      top: -5rem;
+      left: -0.6rem;
       // width: 113px;
-      height: 166px;
+      height: 10.3rem;
       opacity: 0.1;
       // font-family: Impact;
       font-size: 8.5rem;
@@ -222,8 +227,8 @@ export default {
     }
 
     .text {
-      width: 868px;
-      height: 216px;
+      width: 55%;
+      height: 13.5rem;
       // font-family: Futura;
       font-size: 2.5rem;
       font-weight: bold;
@@ -241,15 +246,15 @@ export default {
 
     .button {
       width: 48%;
-      height: 66px;
-      border-radius: 10px;
-      box-shadow: 5px 10px 10px 0 var(--black-16);
+      height: 4rem;
+      border-radius: 0.6rem;
+      box-shadow: 0.3rem 0.6rem 0.6rem 0 var(--black-16);
       // font-family: FuturaHvBT;
       font-size: 1.5rem;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      line-height: 66px;
+      line-height: 4rem;
       letter-spacing: normal;
       text-align: center;
       color: var(--white);
@@ -267,15 +272,15 @@ export default {
   }
 
   .social {
-    width: 110px;
+    width: 7.5rem;
 
     .link {
       text-decoration: none;
-      margin-top: 60px;
+      margin-top: 3.75rem;
 
       .logo {
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
         object-fit: contain;
       }
     }

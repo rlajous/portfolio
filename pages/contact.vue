@@ -4,13 +4,13 @@
       <img src="~/assets/img/svg/Polygon 16.svg" alt="background image" class="polygon triangle">
     </picture>
     <picture>
-      <img src="~/assets/img/svg/Path 15.svg" alt="background image" class="polygon gray top">
+      <img src="~/assets/img/svg/Path 40.svg" alt="background image" class="polygon gray top">
     </picture>
     <picture>
       <img src="~/assets/img/svg/Path 15.svg" alt="background image" class="polygon middle">
     </picture>
     <picture>
-      <img src="~/assets/img/svg/Path 15.svg" alt="background image" class="polygon gray bottom">
+      <img src="~/assets/img/svg/Path 40.svg" alt="background image" class="polygon gray bottom">
     </picture>
     <h1 class="title">
       Contact Me
@@ -67,7 +67,7 @@
             /rlajous
           </span>
         </a> -->
-        <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank">
+        <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank" rel="noreferrer noopener">
           <picture>
             <img src="~/assets/img/linkedin-color.png" alt="My Logo, a tree inside a circle" class="logo">
           </picture>
