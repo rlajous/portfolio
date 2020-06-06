@@ -25,7 +25,7 @@
         Hi
       </span>
       <h3 class="text">
-        I am passionate with scuba, I love my two dogs, I have been in a church that helps poor people, I love to draw
+        I am passionate with scuba, I love my two dogs, I love to draw
       </h3>
     </div>
     <div class="buttons row space-between">

@@ -4,7 +4,7 @@
       About Me
     </h2>
     <h1 class="subtitle">
-      I am passionate with scuba, I love my two dogs, I have been in a church that helps poor people, I love to draw. I am currently takin theatre impro classes. I love the beach. I currently live in Argentina and have Spanish passport. I work remotely
+      I am passionate with scuba, I love my two dogs, I love to draw. I am currently takin theatre impro classes. I love the beach. I currently live in Argentina and have Spanish passport. I work remotely
     </h1>
     <h2 class="title m-b-10">
       Skills
