@@ -3,9 +3,17 @@
     <picture>
       <img src="~/assets/img/portrait.png" alt="Portait of myself" class="portrait">
     </picture>
-    <h1 class="title">
-      Rodrigo Lajous
-    </h1>
+    <picture>
+      <img src="~/assets/img/svg/Polygon 7.svg" alt="background image" class="background-image">
+    </picture>
+    <div class="relative">
+      <h1 class="title">
+        Rodrigo Lajous
+      </h1>
+      <picture>
+        <img src="~/assets/img/svg/Group 5.svg" alt="background image" class="absolute underline">
+      </picture>
+    </div>
     <h2 class="subtitle">
       Full Stack Developer
     </h2>
@@ -139,6 +147,14 @@ export default {
   overflow: hidden;
   padding: 2.5% 10%;
 
+  .background-image {
+    position: absolute;
+    bottom: -9.25rem;
+    height: 32rem;
+    left: -10.25rem;
+    transform: rotate(31deg);
+  }
+
   .portrait {
     position: absolute;
     bottom: -200px;
@@ -162,16 +178,11 @@ export default {
     text-align: left;
     color: var(--soft-blue);
     margin-bottom: 70px;
+  }
 
-    &::after {
-      content: "";
-        display: block;
-        position: absolute;
-        bottom: -20px;
-        width: 36%;
-        height: 5px;
-        background-color: var(--soft-blue);
-    }
+  .underline {
+    bottom: 2rem;
+    height: 23px;
   }
 
   .subtitle {

@@ -1,5 +1,17 @@
 <template>
   <div class="container column center">
+    <picture>
+      <img src="~/assets/img/svg/Polygon 16.svg" alt="background image" class="polygon triangle">
+    </picture>
+    <picture>
+      <img src="~/assets/img/svg/Path 15.svg" alt="background image" class="polygon gray top">
+    </picture>
+    <picture>
+      <img src="~/assets/img/svg/Path 15.svg" alt="background image" class="polygon middle">
+    </picture>
+    <picture>
+      <img src="~/assets/img/svg/Path 15.svg" alt="background image" class="polygon gray bottom">
+    </picture>
     <h1 class="title">
       Contact Me
     </h1>
@@ -100,7 +112,7 @@ export default {
   },
   head() {
     return {
-      title: 'Contacto',
+      title: 'Contact',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
@@ -182,12 +194,43 @@ export default {
 
 <style lang="scss" scoped>
 .container {
+  position: relative;
+  overflow: hidden;
+
+  .polygon {
+    position: absolute;
+
+    &.triangle {
+      bottom: -17rem;
+      left: -22rem;
+      height: 45rem;
+    }
+
+    &.top {
+      top: 11rem;
+      right: 3rem;
+    }
+
+    &.middle {
+      bottom: 29rem;
+      right: 8rem;
+      height: 6rem;
+    }
+
+    &.bottom {
+      bottom: 13rem;
+      right: 2rem;
+    }
+
+    &.gray {
+      height: 6.25rem;
+    }
+  }
   .title {
-    // width: 626px;
-    height: 166px;
+    height: 10rem;
     opacity: 0.08;
     // font-family: Impact;
-    font-size: 136px;
+    font-size: 8.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -199,11 +242,10 @@ export default {
 
   .subtitle {
     position: relative;
-    top: -65px;
     // width: 1126px;
-    height: 156px;
+    height: 10rem;
     // font-family: Futura;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -218,36 +260,36 @@ export default {
     margin-bottom: 10%;
 
     .form {
-      width: 674px;
+      width: 35%;
 
       .input {
         width: 100%;
-        height: 85px;
+        height: 5.3rem;
         border-radius: 10px;
         border: solid 0.3px #707070;
         background-color: var(--white);
-        padding-left: 24px;
+        padding-left: 1.5rem;
         // font-family: FuturaLtBT;
-        font-size: 25px;
+        font-size: 1.6rem;
         font-weight: 300;
         font-stretch: normal;
         font-style: normal;
-        line-height: 85px;
+        line-height: 5.3rem;
         letter-spacing: normal;
         text-align: left;
         color: var(--black);
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
       }
 
       .textarea {
-        padding: 24px;
+        padding: 1.5rem;
         width: 100%;
-        height: 197px;
+        height: 12rem;
         border-radius: 10px;
         border: solid 0.3px #707070;
         background-color: var(--white);
         // font-family: FuturaLtBT;
-        font-size: 25px;
+        font-size: 1.6rem;
         font-weight: 300;
         font-stretch: normal;
         font-style: normal;
@@ -255,21 +297,21 @@ export default {
         letter-spacing: normal;
         text-align: left;
         color: var(--black);
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
       }
 
       .button {
-        width: 306px;
-        height: 66px;
+        width: 45%;
+        height: 4rem;
         border-radius: 10px;
         background-color: var(--red-pink);
         border: none;
         // font-family: FuturaHvBT;
-        font-size: 25px;
+        font-size: 1.6rem;
         font-weight: 900;
         font-stretch: normal;
         font-style: normal;
-        line-height: 66px;
+        line-height: 4rem;
         letter-spacing: normal;
         text-align: center;
         color: var(--white);
@@ -280,9 +322,9 @@ export default {
     .info {
       .info-title {
         // width: 657px;
-        height: 53px;
+        height: 3.3rem;
         // font-family: Futura;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -290,23 +332,23 @@ export default {
         letter-spacing: normal;
         text-align: left;
         color: var(--black);
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
       }
 
       .link {
-        margin-bottom: 30px;
+        margin-bottom: 1.9rem;
         text-decoration: none;
 
         .logo {
-          width: 50px;
-          height: 50px;
+          width: 3rem;
+          height: 3rem;
           object-fit: contain;
         }
 
         .text {
-          height: 40px;
+          height: 2.5rem;
           // font-family: FuturaLtBT;
-          font-size: 30px;
+          font-size: 1.8rem;
           font-weight: 300;
           font-stretch: normal;
           font-style: normal;

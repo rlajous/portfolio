@@ -35,6 +35,7 @@ export default Vue.extend({
   --aqua-blue: #11cdef;
   --robin-egg-blue: #8eeeff;
   --red-pink: #f5365c;
+  --pale-grey: #f3f4fb;
 }
 
 html {

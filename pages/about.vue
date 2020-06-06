@@ -129,7 +129,7 @@ export default {
 <style lang="scss" scoped>
 
 .m-b-10 {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .title {
