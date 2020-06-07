@@ -139,7 +139,7 @@ export default {
 
 .title {
   opacity: 0.08;
-  // font-family: Impact;
+  font-family: 'Impact';
   font-size: 8.5rem;
   font-weight: normal;
   font-stretch: normal;
@@ -152,7 +152,7 @@ export default {
 
 .subtitle {
   width: 60%;
-  // font-family: FuturaBkBT;
+  font-family: 'Futura Bk BT';
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -201,7 +201,7 @@ export default {
   .name {
     margin-top: 80px;
     height: 27px;
-    font-family: FuturaHvBT;
+    font-family: 'Futura Hv BT';
     font-size: 20px;
     font-weight: 900;
     font-stretch: normal;
@@ -220,7 +220,7 @@ export default {
   .description {
     width: 80%;
     height: 76px;
-    font-family: FuturaBkBT;
+    font-family: 'Futura Bk BT';
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -235,7 +235,7 @@ export default {
   .experience-title {
     height: 21px;
     opacity: 0.7;
-    font-family: FuturaHvBT;
+    font-family: 'Futura Hv BT';
     font-size: 16px;
     font-weight: 900;
     font-stretch: normal;
@@ -249,7 +249,7 @@ export default {
 
   .experience {
     height: 27px;
-    font-family: FuturaHvBT;
+    font-family: 'Futura Hv BT';
     font-size: 20px;
     font-weight: 900;
     font-stretch: normal;

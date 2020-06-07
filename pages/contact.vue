@@ -20,7 +20,7 @@
       <br>
       Feel free to Contact me any time
     </h2>
-    <div class="content row space-around">
+    <div class="content row space-evenly">
       <form action="" class="form column end">
         <input
           class="input"
@@ -195,41 +195,43 @@ export default {
 <style lang="scss" scoped>
 .container {
   position: relative;
+  height: calc( 100vh - 7.5rem);
   overflow: hidden;
 
   .polygon {
     position: absolute;
 
     &.triangle {
-      bottom: -17rem;
+      bottom: -22rem;
       left: -22rem;
       height: 45rem;
     }
 
     &.top {
-      top: 11rem;
-      right: 3rem;
+      top: 8rem;
+      right: 4rem;
     }
 
     &.middle {
-      bottom: 29rem;
-      right: 8rem;
+      bottom: 24rem;
+      right: 11rem;
       height: 6rem;
     }
 
     &.bottom {
-      bottom: 13rem;
-      right: 2rem;
+      bottom: 7rem;
+      right: 4rem;
     }
 
     &.gray {
-      height: 6.25rem;
+      height: 8.25rem;
     }
   }
+
   .title {
     height: 10rem;
     opacity: 0.08;
-    // font-family: Impact;
+    font-family: 'Impact';
     font-size: 8.5rem;
     font-weight: normal;
     font-stretch: normal;
@@ -242,9 +244,7 @@ export default {
 
   .subtitle {
     position: relative;
-    // width: 1126px;
     height: 10rem;
-    // font-family: Futura;
     font-size: 2rem;
     font-weight: bold;
     font-stretch: normal;
@@ -257,7 +257,6 @@ export default {
 
   .content {
     width: 100%;
-    margin-bottom: 10%;
 
     .form {
       width: 35%;
@@ -269,7 +268,7 @@ export default {
         border: solid 0.3px #707070;
         background-color: var(--white);
         padding-left: 1.5rem;
-        // font-family: FuturaLtBT;
+        font-family: 'Futura Lt BT';
         font-size: 1.6rem;
         font-weight: 300;
         font-stretch: normal;
@@ -288,7 +287,7 @@ export default {
         border-radius: 10px;
         border: solid 0.3px #707070;
         background-color: var(--white);
-        // font-family: FuturaLtBT;
+        font-family: 'Futura Lt BT';
         font-size: 1.6rem;
         font-weight: 300;
         font-stretch: normal;
@@ -306,7 +305,7 @@ export default {
         border-radius: 10px;
         background-color: var(--red-pink);
         border: none;
-        // font-family: FuturaHvBT;
+        font-family: 'Futura Hv BT';
         font-size: 1.6rem;
         font-weight: 900;
         font-stretch: normal;
@@ -321,9 +320,7 @@ export default {
 
     .info {
       .info-title {
-        // width: 657px;
         height: 3.3rem;
-        // font-family: Futura;
         font-size: 2.5rem;
         font-weight: bold;
         font-stretch: normal;
@@ -347,7 +344,7 @@ export default {
 
         .text {
           height: 2.5rem;
-          // font-family: FuturaLtBT;
+          font-family: 'Futura Lt BT';
           font-size: 1.8rem;
           font-weight: 300;
           font-stretch: normal;
@@ -360,7 +357,5 @@ export default {
       }
     }
   }
-
-
 }
 </style>

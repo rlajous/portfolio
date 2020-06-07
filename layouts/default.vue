@@ -25,6 +25,8 @@ export default Vue.extend({
 <style lang="scss">
 @import '~/assets/scss/display.scss';
 @import '~/assets/fonts/stylesheet.css';
+@import '~/assets/fonts/impact/stylesheet.css';
+
 :root {
   --soft-green: #6ace89;
   --black: #000000;
@@ -39,7 +41,7 @@ export default Vue.extend({
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Futura' ,sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

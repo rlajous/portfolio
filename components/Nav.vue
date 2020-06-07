@@ -50,9 +50,8 @@
     justify-content: space-between;
 
     .text {
-      // width: 97px;
       height: 1.9rem;
-      // font-family: FuturaHvBT;
+      font-family: 'Futura Hv BT';
       font-size: 1.4rem;
       font-weight: 900;
       font-stretch: normal;
@@ -64,18 +63,18 @@
       text-decoration: none;
 
       &.active {
-          color: #11cdef;
-          position: relative;
+        color: #11cdef;
+        position: relative;
 
-          &::after {
-            content: "";
-              display: block;
-              position: absolute;
-              bottom: -1rem;
-              width: 100%;
-              height: 0.01rem;
-              background-color: #11cdef;
-          }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -1rem;
+          width: 100%;
+          height: 3px;
+          background-color: #11cdef;
+        }
       }
     }
 
@@ -83,6 +82,7 @@
       width: 13rem;
       height: 3.1rem;
       border-radius: 0.6rem;
+      font-family: 'Futura Hv BT';
       background-image: linear-gradient(to left, #8eeeff, #11cdef);
       text-decoration: none;
       line-height: 3.1rem;
@@ -90,7 +90,6 @@
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      // line-height: 1.36;
       letter-spacing: normal;
       text-align: center;
       color: white;

@@ -172,9 +172,6 @@ export default {
 
   .title {
     position: relative;
-    // width: 546px;
-    // height: 122px;
-    // font-family: Futura XBlk BT;
     font-size: 4.3rem;
     font-weight: bold;
     font-stretch: normal;
@@ -192,9 +189,8 @@ export default {
   }
 
   .subtitle {
-    // width: 258px;
     height: 2.5rem;
-    font-family: Futura Lt BT;
+    font-family: 'Futura Lt BT';
     font-size: 1.8rem;
     font-weight: 300;
     font-stretch: normal;
@@ -213,10 +209,9 @@ export default {
       position: absolute;
       top: -5rem;
       left: -0.6rem;
-      // width: 113px;
       height: 10.3rem;
       opacity: 0.1;
-      // font-family: Impact;
+      font-family: 'Impact';
       font-size: 8.5rem;
       font-weight: normal;
       font-stretch: normal;
@@ -230,7 +225,6 @@ export default {
     .text {
       width: 55%;
       height: 13.5rem;
-      // font-family: Futura;
       font-size: 2.5rem;
       font-weight: bold;
       font-stretch: normal;
@@ -250,7 +244,7 @@ export default {
       height: 4rem;
       border-radius: 0.6rem;
       box-shadow: 0.3rem 0.6rem 0.6rem 0 var(--black-16);
-      // font-family: FuturaHvBT;
+      font-family: 'Futura Hv BT';
       font-size: 1.5rem;
       font-weight: 900;
       font-stretch: normal;
