@@ -12,16 +12,18 @@
     <picture>
       <img src="~/assets/img/svg/Path 40.svg" alt="background image" class="polygon gray bottom">
     </picture>
-    <h1 class="title">
-      Contact Me
-    </h1>
-    <h2 class="subtitle">
-      Turn Your Ideas into Reality with me
-      <br>
-      Feel free to Contact me any time
-    </h2>
+    <div class="relative">
+      <h1 class="title">
+        Contact Me
+      </h1>
+      <h2 class="subtitle absolute">
+        Turn Your Ideas into Reality with me
+        <br>
+        Feel free to Contact me any time
+      </h2>
+    </div>
     <div class="content row space-evenly">
-      <form action="" class="form column end">
+      <form action="" class="form column end" @submit.prevent="sendEmail()">
         <input
           class="input"
           type='text'
@@ -50,9 +52,11 @@
           class="button"
           type='submit'
           id="contact-submit"
-          name="submit"
-          @click.stop.prevent="sendEmail()">
-          Send Now
+          name="submit">
+          <Loader v-if="loading"/>
+          <span v-else>
+            Send Now
+          </span>
         </button>
       </form>
       <div class="info column">
@@ -82,14 +86,19 @@
 
 <script>
 import { page } from 'vue-analytics'
+import Loader from '~/components/Loader.vue'
 
 export default {
   name: 'Contact',
+    components: {
+    Loader
+  },
   data() {
     return {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      loading: false
     }
   },
   methods: {
@@ -98,7 +107,8 @@ export default {
     },
     async sendEmail() {
       const { name, surname, email, message } = this
-      const ok = await await this.$axios.$post(
+      this.loading = true
+      const ok = await this.$axios.$post(
         `${process.env.MAIL}/sendMail?name=${name}&email=${email}&message=${message}`
       )
       if ( ok === 'Sended') {
@@ -107,7 +117,7 @@ export default {
       else {
         this.$modal.show('Error')
       }
-      // console.log(this.$modal)
+      this.loading = false
     }
   },
   head() {
@@ -244,7 +254,7 @@ export default {
 
   .subtitle {
     position: relative;
-    height: 10rem;
+    height: 8rem;
     font-size: 2rem;
     font-weight: bold;
     font-stretch: normal;
@@ -253,6 +263,7 @@ export default {
     letter-spacing: normal;
     text-align: center;
     color: var(--black);
+    top: -3.5rem;
   }
 
   .content {
@@ -300,6 +311,9 @@ export default {
       }
 
       .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         width: 45%;
         height: 4rem;
         border-radius: 10px;

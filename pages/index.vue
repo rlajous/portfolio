@@ -212,7 +212,7 @@ export default {
       height: 10.3rem;
       opacity: 0.1;
       font-family: 'Impact';
-      font-size: 8.5rem;
+      font-size: 8rem;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;

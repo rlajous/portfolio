@@ -1,18 +1,25 @@
 <template>
   <div class="container column center">
-    <h2 class="title">
-      About Me
-    </h2>
-    <h1 class="subtitle">
-      I am passionate with scuba, I love my two dogs, I love to draw. I am currently takin theatre impro classes. I love the beach. I currently live in Argentina and have Spanish passport. I work remotely
-    </h1>
+    <div class="relative column center">
+      <h2 class="title">
+        About Me
+      </h2>
+      <h1 class="subtitle relative">
+        I am passionate with scuba, I love my two dogs, I love to draw. I am currently takin theatre impro classes. I love the beach. I currently live in Argentina and have Spanish passport. I work remotely
+      </h1>
+    </div>
+    <picture>
+      <source srcset="~/assets/img/red_underline.webp" type="image/webp">
+      <img src="~/assets/img/red_underline.png" alt="about underline" class="underline">
+    </picture>
     <h2 class="title m-b-10">
       Skills
     </h2>
     <div class="row wrap">
       <div class="relative">
         <picture>
-          <img src="~/assets/img/svg/Polygon 16.svg" alt="background image" class="polygon absolute">
+          <source srcset="~/assets/img/Polygon_6.webp" type="image/webp">
+          <img src="~/assets/img/Polygon_6.png" alt="background image" class="polygon absolute">
         </picture>
         <div class="card column center relative">
           <div class="icon column">
@@ -151,7 +158,8 @@ export default {
 }
 
 .subtitle {
-  width: 60%;
+  top: -4rem;
+  width: 55%;
   font-family: 'Futura Bk BT';
   font-size: 2rem;
   font-weight: normal;
@@ -163,46 +171,50 @@ export default {
   color: var(--black);
 }
 
+.underline {
+  margin-bottom: 7rem;
+}
+
 .polygon {
-    width: 800.7px;
-    top: -18rem;
-    left: -18rem;
-    transform: rotate(31deg);
+  width: 48rem;
+  top: -10rem;
+  left: -7rem;
+  transform: rotate(46deg);
 }
 
 .card {
-  margin-bottom: 260px;
-  width: 379px;
-  height: 369px;
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  margin-bottom: 16.25rem;
+  width: 23.5rem;
+  height: 23rem;
+  border-radius: 0.6rem;
+  -webkit-backdrop-filter: blur(1.8rem);
+  backdrop-filter: blur(1.8rem);
   box-shadow: 0 3px 15px 0 var(--black-16);
   background-color: var(--white);
   position: relative;
 
   .icon {
-    width: 90px;
-    height: 90px;
+    width: 5.6rem;
+    height: 5.6rem;
     box-shadow: 0 3px 15px 0 var(--black-16);
     background-color: var(--white);
     border-radius: 50%;
     position: absolute;
-    top: -45px;
+    top: -2.8rem;
 
     .image {
       margin: auto;
-      width: 60px;
-      height: 60px;
+      width: 3.75rem;
+      height: 3.75rem;
       object-fit: contain;
     }
   }
 
   .name {
-    margin-top: 80px;
-    height: 27px;
+    margin-top: 5rem;
+    height: 1.7rem;
     font-family: 'Futura Hv BT';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -213,15 +225,15 @@ export default {
   }
 
   .divider {
-    margin-top: 22px;
-    margin-bottom: 26px;
+    margin-top: 1.3rem;
+    margin-bottom: 1.6rem;
   }
 
   .description {
     width: 80%;
-    height: 76px;
+    height: 4.75rem;
     font-family: 'Futura Bk BT';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -229,14 +241,14 @@ export default {
     letter-spacing: normal;
     text-align: center;
     color: var(--black);
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 
   .experience-title {
-    height: 21px;
+    height: 1.3rem;
     opacity: 0.7;
     font-family: 'Futura Hv BT';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -244,13 +256,13 @@ export default {
     letter-spacing: normal;
     text-align: left;
     color: var(--black);
-    margin-bottom: 7px;
+    margin-bottom: 0.5rem;
   }
 
   .experience {
-    height: 27px;
+    height: 1.7rem;
     font-family: 'Futura Hv BT';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -258,7 +270,7 @@ export default {
     letter-spacing: normal;
     text-align: left;
     color: var(--black);
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
   }
 }
 </style>
