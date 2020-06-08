@@ -109,7 +109,7 @@ export default {
       const { name, surname, email, message } = this
       this.loading = true
       const ok = await this.$axios.$post(
-        `${process.env.MAIL}/sendMail?name=${name}&email=${email}&message=${message}`
+        `${process.env.BASE_URL}/sendMail?name=${name}&email=${email}&message=${message}`
       )
       if ( ok === 'Sended') {
         this.$modal.show('Success')
