@@ -14,6 +14,7 @@
   height: 2.5rem;
   text-align: center;
   font-size: 0.6rem;
+  margin: auto;
 }
 
 .spinner > div {
