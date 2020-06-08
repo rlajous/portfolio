@@ -42,6 +42,7 @@
   animation-delay: -0.9s;
 }
 
+
 .spinner .rect5 {
   -webkit-animation-delay: -0.8s;
   animation-delay: -0.8s;
