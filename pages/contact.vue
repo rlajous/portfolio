@@ -109,7 +109,7 @@ export default {
       const { name, surname, email, message } = this
       this.loading = true
       const ok = await this.$axios.$post(
-        `${process.env.BASE_URL}/sendMail?name=${name}&email=${email}&message=${message}`
+        `https://us-central1-contacto-landing.cloudfunctions.net/sendMail?name=${name}&email=${email}&message=${message}`
       )
       if ( ok === 'Sended') {
         this.$modal.show('Success')
