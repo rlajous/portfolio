@@ -148,7 +148,9 @@ export default {
 <style lang="scss" scoped>
 
 .container {
-  overflow-y: hidden;
+  max-width: 100vw;
+  height: fit-content;
+  overflow: hidden;
 }
 
 .m-b-10 {
