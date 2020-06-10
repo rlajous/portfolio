@@ -19,7 +19,7 @@
     "vue-js-modal": "^2.0.0-rc.3"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxt/typescript-build": "^1.0.2",
     "@nuxtjs/google-analytics": "^2.3.0",
     "concurrent-transform": "^1.0.0",
     "gulp": "^4.0.2",
