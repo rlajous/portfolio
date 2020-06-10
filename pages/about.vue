@@ -147,6 +147,10 @@ export default {
 
 <style lang="scss" scoped>
 
+.container {
+  overflow-y: hidden;
+}
+
 .m-b-10 {
   margin-bottom: 6.25rem;
 }
