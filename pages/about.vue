@@ -15,8 +15,8 @@
     <h2 class="title m-b-10">
       Skills
     </h2>
-    <div class="row wrap">
-      <div class="relative">
+    <div class="row wrap w-8 center">
+      <div class="relative card-container" v-for="tech in techs" :key="tech">
         <picture>
           <source srcset="~/assets/img/Polygon_6.webp" type="image/webp">
           <img src="~/assets/img/Polygon_6.png" alt="background image" class="polygon absolute">
@@ -24,21 +24,22 @@
         <div class="card column center relative">
           <div class="icon column">
             <picture class="image">
-              <img src="~/assets/img/github-color.png" alt="Portait of myself" class="image">
+              <source :srcset="require('~/assets/img/'+tech.img+'.webp')" type="image/webp">
+              <img :src="require('~/assets/img/'+tech.img+'.png')" alt="Portait of myself" class="image">
             </picture>
           </div>
           <p class="name">
-            nuxt JS
+            {{tech.name}}
           </p>
           <hr class="divider">
           <p class="description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            {{tech.description}}
           </p>
           <p class="experience-title">
             Experiance
           </p>
           <p class="experience">
-            7 month
+            {{tech.time}}
           </p>
         </div>
       </div>
@@ -48,9 +49,15 @@
 
 <script lang="ts">
 import { page } from 'vue-analytics'
+import technologies from '~/constants/about'
 
 export default {
   name: 'About',
+  data() {
+    return {
+      techs: technologies
+    }
+  },
   methods: {
     track() {
       page('/about')
@@ -144,6 +151,10 @@ export default {
   margin-bottom: 6.25rem;
 }
 
+.w-8 {
+  width: 90%;
+}
+
 .title {
   opacity: 0.08;
   font-family: 'Impact';
@@ -176,14 +187,22 @@ export default {
 }
 
 .polygon {
-  width: 48rem;
-  top: -10rem;
+  width: 46rem;
+  top: -9rem;
   left: -7rem;
   transform: rotate(46deg);
 }
 
+.card-container {
+  &:nth-of-type(3n + 2) {
+    margin-right:  16.25rem;
+    margin-left:  16.25rem;
+  }
+}
+
 .card {
   margin-bottom: 16.25rem;
+  // margin-right:  16.25rem;
   width: 23.5rem;
   height: 23rem;
   border-radius: 0.6rem;
@@ -226,6 +245,8 @@ export default {
 
   .divider {
     margin-top: 1.3rem;
+    border: 1px solid var(--soft-blue);
+    width: 6rem;
     margin-bottom: 1.6rem;
   }
 
