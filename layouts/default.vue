@@ -2,8 +2,10 @@
   <div>
     <Nav />
     <nuxt />
-    <Error />
-    <Success />
+    <no-ssr>
+      <Error />
+      <Success />
+    </no-ssr>
   </div>
 </template>
 
