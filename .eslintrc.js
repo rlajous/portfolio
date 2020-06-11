@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   env: {
+    es6: true,
     browser: true,
     node: true,
   },
@@ -17,6 +18,6 @@ module.exports = {
   plugins: ['prettier'],
   // add your custom rules here
   rules: {
-    'prettier/prettier': ['error'],
+    'prettier/prettier': 'error',
   },
 }
