@@ -77,7 +77,7 @@ export default {
           hid: 'keywords',
           name: 'keywords',
           content:
-            'web developer'
+            'web, developer, fullstack, landing, portfolio, porfolio, scuba, programmer, engenieer'
         },
         {
           hid: 'title',
@@ -112,7 +112,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: ''
+          content: 'https://navarrolajous.com/share.jpg'
         },
         {
           hid: 'twitter:card',
@@ -137,7 +137,7 @@ export default {
         {
           hid: 'twitter:image',
           property: 'twitter:image',
-          content: ''
+          content: 'https://navarrolajous.com/share.jpg'
         }
       ]
     }
