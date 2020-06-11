@@ -19,8 +19,8 @@ export default Vue.extend({
   components: {
     Nav,
     Success,
-    Error
-  }
+    Error,
+  },
 })
 </script>
 

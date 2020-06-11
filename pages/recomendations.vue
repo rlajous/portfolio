@@ -37,7 +37,7 @@ export default {
   methods: {
     track() {
       page('/recomendations')
-    }
+    },
   },
   head() {
     return {
@@ -47,76 +47,76 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: ''
+          content: '',
         },
         {
           hid: 'keywords',
           name: 'keywords',
-          content: ''
+          content: '',
         },
         {
           hid: 'title',
           name: 'title',
-          content: ''
+          content: '',
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: ''
+          content: '',
         },
         {
           hid: 'og:site_name',
           property: 'og:site_name',
-          content: ''
+          content: '',
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: ''
+          content: '',
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: ''
+          content: '',
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: ''
+          content: '',
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: ''
+          content: '',
         },
         {
           hid: 'twitter:card',
           property: 'twitter:card',
-          content: 'summary_large_image'
+          content: 'summary_large_image',
         },
         {
           hid: 'twitter:url',
           property: 'twitter:url',
-          content: ''
+          content: '',
         },
         {
           hid: 'twitter:title',
           property: 'twitter:title',
-          content: ''
+          content: '',
         },
         {
           hid: 'twitter:description',
           property: 'twitter:description',
-          content: ''
+          content: '',
         },
         {
           hid: 'twitter:image',
           property: 'twitter:image',
-          content: ''
-        }
-      ]
+          content: '',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

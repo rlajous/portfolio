@@ -8,12 +8,12 @@ const parallelize = require('concurrent-transform')
 const config = {
   // Required
   params: {
-    Bucket: process.env.AWS_BUCKET_NAME
+    Bucket: process.env.AWS_BUCKET_NAME,
   },
   credentials: {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    signatureVersion: 'v3'
+    signatureVersion: 'v3',
   },
 
   // Optional
@@ -21,7 +21,7 @@ const config = {
   distribution: process.env.AWS_CLOUDFRONT, // CloudFront distribution ID
   region: process.env.AWS_DEFAULT_REGION,
   headers: {
-    'Cache-Control': 'max-age=6048000, no-transform, public'
+    'Cache-Control': 'max-age=6048000, no-transform, public',
   },
 
   // Sensible Defaults - gitignore these Files and Dirs
@@ -29,10 +29,10 @@ const config = {
   indexRootPath: true,
   cacheFileName: '.awspublish',
   concurrentUploads: 10,
-  wait: true // wait for CloudFront invalidation to complete (about 30-60 seconds)
+  wait: true, // wait for CloudFront invalidation to complete (about 30-60 seconds)
 }
 
-gulp.task('deploy', function() {
+gulp.task('deploy', function () {
   // create a new publisher using S3 options
   // http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#constructor-property
   const publisher = awspublish.create(config)

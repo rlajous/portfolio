@@ -91,7 +91,7 @@ export default {
   methods: {
     track() {
       page('/')
-    }
+    },
   },
   head() {
     return {
@@ -101,77 +101,77 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Turn Your Ideas into Reality with me'
+          content: 'Turn Your Ideas into Reality with me',
         },
         {
           hid: 'keywords',
           name: 'keywords',
           content:
-            'web, developer, fullstack, landing, portfolio, porfolio, scuba, programmer, engenieer, Rodrigo, rodrigo, navarro, lajous, manuel, Manuel, MANUEL, NAVARRO, LAJOUS, Lajous, Navarro, RODRIGO, MANUEL, Manuel'
+            'web, developer, fullstack, landing, portfolio, porfolio, scuba, programmer, engenieer, Rodrigo, rodrigo, navarro, lajous, manuel, Manuel, MANUEL, NAVARRO, LAJOUS, Lajous, Navarro, RODRIGO, MANUEL, Manuel',
         },
         {
           hid: 'title',
           name: 'title',
-          content: 'Navarro Lajous'
+          content: 'Navarro Lajous',
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
+          content: 'website',
         },
         {
           hid: 'og:site_name',
           property: 'og:site_name',
-          content: 'Navarro Lajous'
+          content: 'Navarro Lajous',
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: 'https://navarrolajous.com/'
+          content: 'https://navarrolajous.com/',
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Navarro Lajous'
+          content: 'Navarro Lajous',
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: 'Turn Your Ideas into Reality with me'
+          content: 'Turn Your Ideas into Reality with me',
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://navarrolajous.com/share.jpg'
+          content: 'https://navarrolajous.com/share.jpg',
         },
         {
           hid: 'twitter:card',
           property: 'twitter:card',
-          content: 'summary_large_image'
+          content: 'summary_large_image',
         },
         {
           hid: 'twitter:url',
           property: 'twitter:url',
-          content: 'https://navarrolajous.com/'
+          content: 'https://navarrolajous.com/',
         },
         {
           hid: 'twitter:title',
           property: 'twitter:title',
-          content: 'Navarro Lajous'
+          content: 'Navarro Lajous',
         },
         {
           hid: 'twitter:description',
           property: 'twitter:description',
-          content: 'Turn Your Ideas into Reality with me'
+          content: 'Turn Your Ideas into Reality with me',
         },
         {
           hid: 'twitter:image',
           property: 'twitter:image',
-          content: 'https://navarrolajous.com/share.jpg'
-        }
-      ]
+          content: 'https://navarrolajous.com/share.jpg',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

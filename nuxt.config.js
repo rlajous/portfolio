@@ -4,7 +4,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -30,9 +30,9 @@ export default {
     [
       '@nuxtjs/google-analytics',
       {
-        id: process.env.GOOGLE_ID
-      }
-    ]
+        id: process.env.GOOGLE_ID,
+      },
+    ],
   ],
   /*
    ** Nuxt.js modules
@@ -42,8 +42,13 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/sitemap',
   ],
+  sitemap: {
+    hostname: 'https://navarrolajous.com',
+    gzip: true,
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -56,10 +61,10 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
   },
   router: {
-    routes: ['/about', '/contact', '/', '/portfolio', '/recomendations']
+    routes: ['/about', '/contact', '/', '/portfolio', '/recomendations'],
   },
-  generate: {}
+  generate: {},
 }
