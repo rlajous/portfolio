@@ -17,11 +17,11 @@ const config = {
   },
 
   // Optional
-  deleteOldVersions: false, // NOT FOR PRODUCTION
+  deleteOldVersions: true, // NOT FOR PRODUCTION
   distribution: process.env.AWS_CLOUDFRONT, // CloudFront distribution ID
   region: process.env.AWS_DEFAULT_REGION,
   headers: {
-    /* 'Cache-Control': 'max-age=315360000, no-transform, public', */
+    'Cache-Control': 'max-age=315360000, no-transform, public',
   },
 
   // Sensible Defaults - gitignore these Files and Dirs
