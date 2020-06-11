@@ -5,41 +5,58 @@
         About Me
       </h2>
       <h1 class="subtitle relative">
-        I am passionate with scuba, I love my two dogs, I love to draw. I am currently takin theatre impro classes. I love the beach. I currently live in Argentina and have Spanish passport. I work remotely
+        I am passionate with scuba, I love my two dogs, I love to draw. I am
+        currently takin theatre impro classes. I love the beach. I currently
+        live in Argentina and have Spanish passport. I work remotely
       </h1>
     </div>
     <picture>
-      <source srcset="~/assets/img/red_underline.webp" type="image/webp">
-      <img src="~/assets/img/red_underline.png" alt="about underline" class="underline">
+      <source srcset="~/assets/img/red_underline.webp" type="image/webp" />
+      <img
+        src="~/assets/img/red_underline.png"
+        alt="about underline"
+        class="underline"
+      />
     </picture>
     <h2 class="title m-b-10">
       Skills
     </h2>
     <div class="row wrap w-8 center">
-      <div class="relative card-container" v-for="tech in techs" :key="tech">
+      <div v-for="tech in techs" :key="tech" class="relative card-container">
         <picture>
-          <source srcset="~/assets/img/Polygon_6.webp" type="image/webp">
-          <img src="~/assets/img/Polygon_6.png" alt="background image" class="polygon absolute">
+          <source srcset="~/assets/img/Polygon_6.webp" type="image/webp" />
+          <img
+            src="~/assets/img/Polygon_6.png"
+            alt="background image"
+            class="polygon absolute"
+          />
         </picture>
         <div class="card column center relative">
           <div class="icon column">
             <picture class="image">
-              <source :srcset="require('~/assets/img/'+tech.img+'.webp')" type="image/webp">
-              <img :src="require('~/assets/img/'+tech.img+'.png')" alt="Portait of myself" class="image">
+              <source
+                :srcset="require('~/assets/img/' + tech.img + '.webp')"
+                type="image/webp"
+              />
+              <img
+                :src="require('~/assets/img/' + tech.img + '.png')"
+                alt="Portait of myself"
+                class="image"
+              />
             </picture>
           </div>
           <p class="name">
-            {{tech.name}}
+            {{ tech.name }}
           </p>
-          <hr class="divider">
+          <hr class="divider" />
           <p class="description">
-            {{tech.description}}
+            {{ tech.description }}
           </p>
           <p class="experience-title">
             Experiance
           </p>
           <p class="experience">
-            {{tech.time}}
+            {{ tech.time }}
           </p>
         </div>
       </div>
@@ -76,8 +93,7 @@ export default {
         {
           hid: 'keywords',
           name: 'keywords',
-          content:
-            ''
+          content: ''
         },
         {
           hid: 'title',
@@ -146,7 +162,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .container {
   max-width: 100vw;
   height: fit-content;
@@ -201,8 +216,8 @@ export default {
 
 .card-container {
   &:nth-of-type(3n + 2) {
-    margin-right:  16.25rem;
-    margin-left:  16.25rem;
+    margin-right: 16.25rem;
+    margin-left: 16.25rem;
   }
 }
 

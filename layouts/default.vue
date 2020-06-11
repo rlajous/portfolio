@@ -41,7 +41,7 @@ export default Vue.extend({
 }
 
 html {
-  font-family: 'Futura' ,sans-serif;
+  font-family: 'Futura', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

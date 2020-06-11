@@ -1,16 +1,32 @@
 <template>
   <div class="container column center">
     <picture>
-      <img src="~/assets/img/svg/Polygon 16.svg" alt="background image" class="polygon triangle">
+      <img
+        src="~/assets/img/svg/Polygon 16.svg"
+        alt="background image"
+        class="polygon triangle"
+      />
     </picture>
     <picture>
-      <img src="~/assets/img/svg/Path 40.svg" alt="background image" class="polygon gray top">
+      <img
+        src="~/assets/img/svg/Path 40.svg"
+        alt="background image"
+        class="polygon gray top"
+      />
     </picture>
     <picture>
-      <img src="~/assets/img/svg/Path 15.svg" alt="background image" class="polygon middle">
+      <img
+        src="~/assets/img/svg/Path 15.svg"
+        alt="background image"
+        class="polygon middle"
+      />
     </picture>
     <picture>
-      <img src="~/assets/img/svg/Path 40.svg" alt="background image" class="polygon gray bottom">
+      <img
+        src="~/assets/img/svg/Path 40.svg"
+        alt="background image"
+        class="polygon gray bottom"
+      />
     </picture>
     <div class="relative">
       <h1 class="title">
@@ -18,42 +34,41 @@
       </h1>
       <h2 class="subtitle absolute">
         Turn Your Ideas into Reality with me
-        <br>
+        <br />
         Feel free to Contact me any time
       </h2>
     </div>
     <div class="content row space-evenly">
       <form action="" class="form column end" @submit.prevent="sendEmail()">
         <input
+          v-model="name"
           class="input"
-          type='text'
-          name='name'
+          type="text"
+          name="name"
           tabindex="3"
           placeholder="Full Name"
           required
-          v-model="name">
+        />
         <input
+          v-model="email"
           class="input"
-          type='email'
-          name='email'
+          type="email"
+          name="email"
           tabindex="3"
           placeholder="Email"
           required
-          v-model="email">
+        />
         <textarea
+          v-model="message"
           class="textarea"
-          type='text'
-          name='message'
+          type="text"
+          name="message"
           tabindex="3"
           required
           placeholder="Tell me how can I help you"
-          v-model="message"></textarea>
-        <button
-          class="button"
-          type='submit'
-          id="contact-submit"
-          name="submit">
-          <Loader v-if="loading"/>
+        ></textarea>
+        <button id="contact-submit" class="button" type="submit" name="submit">
+          <Loader v-if="loading" />
           <span v-else>
             Send Now
           </span>
@@ -71,9 +86,18 @@
             /rlajous
           </span>
         </a> -->
-        <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank" rel="nofollow noreferrer noopener">
+        <a
+          href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/"
+          class="link row middle"
+          target="_blank"
+          rel="nofollow noreferrer noopener"
+        >
           <picture>
-            <img src="~/assets/img/linkedin-color.png" alt="My Logo, a tree inside a circle" class="logo">
+            <img
+              src="~/assets/img/linkedin-color.png"
+              alt="My Logo, a tree inside a circle"
+              class="logo"
+            />
           </picture>
           <span class="text">
             /rodrigo-manuel-navarro-lajous
@@ -90,7 +114,7 @@ import Loader from '~/components/Loader.vue'
 
 export default {
   name: 'Contact',
-    components: {
+  components: {
     Loader
   },
   data() {
@@ -106,15 +130,14 @@ export default {
       page('/contact')
     },
     async sendEmail() {
-      const { name, surname, email, message } = this
+      const { name, email, message } = this
       this.loading = true
       const ok = await this.$axios.$post(
         `https://us-central1-contacto-landing.cloudfunctions.net/sendMail?name=${name}&email=${email}&message=${message}`
       )
-      if ( ok === 'Sended') {
+      if (ok === 'Sended') {
         this.$modal.show('Success')
-      }
-      else {
+      } else {
         this.$modal.show('Error')
       }
       this.loading = false
@@ -133,8 +156,7 @@ export default {
         {
           hid: 'keywords',
           name: 'keywords',
-          content:
-            ''
+          content: ''
         },
         {
           hid: 'title',
@@ -205,7 +227,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   position: relative;
-  height: calc( 100vh - 7.5rem);
+  height: calc(100vh - 7.5rem);
   overflow: hidden;
 
   .polygon {

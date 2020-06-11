@@ -52,8 +52,7 @@ export default {
         {
           hid: 'keywords',
           name: 'keywords',
-          content:
-            ''
+          content: ''
         },
         {
           hid: 'title',
@@ -121,6 +120,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

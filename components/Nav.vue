@@ -2,9 +2,13 @@
   <nav class="nav">
     <nuxt-link to="/">
       <picture>
-          <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
-          <source srcset="~/assets/img/logo.webp" type="image/webp">
-          <img src="~/assets/img/logo.png" alt="My Logo, a tree inside a circle" class="logo">
+        <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
+        <source srcset="~/assets/img/logo.webp" type="image/webp" />
+        <img
+          src="~/assets/img/logo.png"
+          alt="My Logo, a tree inside a circle"
+          class="logo"
+        />
       </picture>
     </nuxt-link>
     <div class="links">
@@ -28,7 +32,6 @@
 </template>
 
 <style lang="scss" scoped>
-
 .nav {
   height: 7.5rem;
   width: 100%;
@@ -67,7 +70,7 @@
         position: relative;
 
         &::after {
-          content: "";
+          content: '';
           display: block;
           position: absolute;
           bottom: -1rem;
@@ -97,5 +100,4 @@
     }
   }
 }
-
 </style>

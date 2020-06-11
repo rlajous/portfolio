@@ -1,19 +1,16 @@
 <template>
-  <modal
-        name="Success"
-        height="auto"
-        width="50%"
-        classes='radius'>
+  <modal name="Success" height="auto" width="50%" classes="radius">
     <div class="modal column space-evenly center">
-      <img src="~/assets/img/svg/Group 95.svg" alt="" class="img">
+      <img src="~/assets/img/svg/Group 95.svg" alt="" class="img" />
       <p class="message">
         Message sent succesffuly
       </p>
-      <button
-        class="button"
-        type='button'
-        @click="$modal.hide('Success')">
-        <img src="~/assets/img/svg/icons-27.svg" alt="close button" class="close">
+      <button class="button" type="button" @click="$modal.hide('Success')">
+        <img
+          src="~/assets/img/svg/icons-27.svg"
+          alt="close button"
+          class="close"
+        />
       </button>
     </div>
   </modal>

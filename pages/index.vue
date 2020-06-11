@@ -1,12 +1,20 @@
 <template>
   <div class="content column">
     <picture>
-      <source srcset="~/assets/img/portrait.webp" type="image/webp">
-      <img src="~/assets/img/portrait.png" alt="Portait of myself" class="portrait">
+      <source srcset="~/assets/img/portrait.webp" type="image/webp" />
+      <img
+        src="~/assets/img/portrait.png"
+        alt="Portait of myself"
+        class="portrait"
+      />
     </picture>
     <picture>
       <!-- <source srcset="~/assets/img/portrait.webp" type="image/webp"> -->
-      <img src="~/assets/img/svg/Polygon 7.svg" alt="background image" class="background-image">
+      <img
+        src="~/assets/img/svg/Polygon 7.svg"
+        alt="background image"
+        class="background-image"
+      />
     </picture>
     <div class="relative">
       <h1 class="title">
@@ -14,7 +22,11 @@
       </h1>
       <picture>
         <!-- <source srcset="~/assets/img/portrait.webp" type="image/webp"> -->
-        <img src="~/assets/img/svg/Group 5.svg" alt="background image" class="absolute underline">
+        <img
+          src="~/assets/img/svg/Group 5.svg"
+          alt="background image"
+          class="absolute underline"
+        />
       </picture>
     </div>
     <h2 class="subtitle">
@@ -37,16 +49,34 @@
       </nuxt-link>
     </div>
     <div class="social row space-between">
-      <a href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/" class="link row middle" target="_blank" rel="nofollow noreferrer noopener">
+      <a
+        href="https://www.linkedin.com/in/rodrigo-manuel-navarro-lajous/"
+        class="link row middle"
+        target="_blank"
+        rel="nofollow noreferrer noopener"
+      >
         <picture>
-          <source srcset="~/assets/img/linkedin-color.webp" type="image/webp">
-          <img src="~/assets/img/linkedin-color.png" alt="My Logo, a tree inside a circle" class="logo">
+          <source srcset="~/assets/img/linkedin-color.webp" type="image/webp" />
+          <img
+            src="~/assets/img/linkedin-color.png"
+            alt="My Logo, a tree inside a circle"
+            class="logo"
+          />
         </picture>
       </a>
-      <a href="https://github.com/rlajous" class="link row middle" target="_blank" rel="nofollow noreferrer noopener">
+      <a
+        href="https://github.com/rlajous"
+        class="link row middle"
+        target="_blank"
+        rel="nofollow noreferrer noopener"
+      >
         <picture>
-          <source srcset="~/assets/img/github-color.webp" type="image/webp">
-          <img src="~/assets/img/github-color.png" alt="My Logo, a tree inside a circle" class="logo">
+          <source srcset="~/assets/img/github-color.webp" type="image/webp" />
+          <img
+            src="~/assets/img/github-color.png"
+            alt="My Logo, a tree inside a circle"
+            class="logo"
+          />
         </picture>
       </a>
     </div>
@@ -148,7 +178,7 @@ export default {
 <style lang="scss" scoped>
 .content {
   position: relative;
-  height: calc( 100vh - 7.5rem);
+  height: calc(100vh - 7.5rem);
   overflow: hidden;
   padding: 2.5% 10%;
 
