@@ -107,7 +107,7 @@ export default {
           hid: 'keywords',
           name: 'keywords',
           content:
-            'web, developer, fullstack, landing, portfolio, porfolio, scuba, programmer, engenieer'
+            'web, developer, fullstack, landing, portfolio, porfolio, scuba, programmer, engenieer, Rodrigo, rodrigo, navarro, lajous, manuel, Manuel, MANUEL, NAVARRO, LAJOUS, Lajous, Navarro, RODRIGO, MANUEL, Manuel'
         },
         {
           hid: 'title',
