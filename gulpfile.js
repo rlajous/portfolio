@@ -22,6 +22,7 @@ const config = {
   region: process.env.AWS_DEFAULT_REGION,
   headers: {
     'Cache-Control': 'max-age=315360000, no-transform, public',
+    Expires: '6048000'
   },
 
   // Sensible Defaults - gitignore these Files and Dirs
