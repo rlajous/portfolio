@@ -12,22 +12,22 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.11.0",
-    "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "^2.0.0",
-    "vue-js-modal": "^2.0.0-rc.3"
+    "@nuxtjs/axios": "5.11.0",
+    "@nuxtjs/dotenv": "1.4.1",
+    "@nuxtjs/pwa": "3.0.0-beta.20",
+    "nuxt": "2.12.2",
+    "vue-js-modal": "2.0.0-rc.3"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^1.0.2",
-    "@nuxtjs/google-analytics": "^2.3.0",
-    "concurrent-transform": "^1.0.0",
-    "gulp": "^4.0.2",
-    "gulp-awspublish": "^4.1.2",
-    "gulp-cloudfront-invalidate-aws-publish": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "pug": "^3.0.0",
-    "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^8.0.2"
+    "@nuxt/typescript-build": "1.0.2",
+    "@nuxtjs/google-analytics": "2.3.0",
+    "concurrent-transform": "1.0.0",
+    "gulp": "4.0.2",
+    "gulp-awspublish": "4.1.2",
+    "gulp-cloudfront-invalidate-aws-publish": "1.0.0",
+    "node-sass": "4.14.1",
+    "pug": "3.0.0",
+    "pug-plain-loader": "1.0.0",
+    "sass-loader": "8.0.2"
   }
 }
