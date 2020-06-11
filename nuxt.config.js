@@ -59,5 +59,15 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  router: {
+    routes: [
+      '/about',
+      '/contact',
+      '/',
+      '/portfolio',
+      '/recomendations'
+    ]
+  },
+  generate: {}
 }
