@@ -1,6 +1,10 @@
 # portfolio
 
-> Rodrigo Manuel Navarro Lajous web portfolio
+> Rodrigo Manuel Navarro Lajous Web Portfolio
+
+## Badges
+
+[![DeepScan grade](https://deepscan.io/api/teams/9673/projects/12262/branches/187131/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9673&pid=12262&bid=187131)
 
 ## Build Setup
 
