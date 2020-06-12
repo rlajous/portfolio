@@ -21,7 +21,7 @@ const config = {
   distribution: process.env.AWS_CLOUDFRONT, // CloudFront distribution ID
   region: process.env.AWS_DEFAULT_REGION,
   headers: {
-    'Cache-Control': 'max-age=6048000, no-transform, public',
+    // 'Cache-Control': 'max-age=6048000, no-transform, public',
   },
 
   // Sensible Defaults - gitignore these Files and Dirs
