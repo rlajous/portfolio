@@ -315,4 +315,81 @@ export default {
     margin-bottom: 1.75rem;
   }
 }
+
+@media (max-width: 460px) {
+  .title {
+    font-size: 3.45rem;
+  }
+
+  .subtitle {
+    top: 0;
+    width: 80%;
+    font-size: 1.63rem;
+  }
+
+  .underline {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+
+  .polygon {
+    width: 36rem;
+    top: -7rem;
+    left: -6rem;
+  }
+
+  .card {
+    margin-bottom: 9rem;
+    width: 18.5rem;
+    height: 18.4rem;
+    border-radius: 0.6rem;
+
+    .icon {
+      width: 4.7rem;
+      height: 4.7rem;
+      top: -2.4rem;
+
+      .image {
+        width: 2.9rem;
+        height: 2.9rem;
+      }
+    }
+
+    .name {
+      margin-top: 3.8rem;
+      height: 1.36rem;
+      font-size: 1rem;
+    }
+
+    .divider {
+      margin-top: 1.15rem;
+      border: 1px solid var(--soft-blue);
+      width: 5.72rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .description {
+      width: 80%;
+      min-height: 5.95rem;
+      height: 100%;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-title {
+      height: 1rem;
+      font-size: 0.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .experience {
+      height: 1.36rem;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
 </style>

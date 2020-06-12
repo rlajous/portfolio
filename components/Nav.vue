@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav-container row space-between middle">
     <div class="desktop nav">
       <nuxt-link to="/">
         <picture>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <no-ssr>
-      <nuxt-link to="/">
+      <nuxt-link to="/" class="responsive">
         <picture>
           <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
           <source srcset="~/assets/img/logo.webp" type="image/webp" />
@@ -81,6 +81,10 @@
 
 <style lang="scss" scoped>
 .mobile {
+  display: none;
+}
+
+.responsive {
   display: none;
 }
 
@@ -220,8 +224,20 @@
     display: none;
   }
 
-  .nav {
+  .responsive {
+    display: inherit;
+  }
+
+  .nav-container {
+    width: 100%;
     height: 110px;
+
+    .logo {
+      position: absolute;
+      top: 16.6px;
+      left: 5%;
+      height: 68.75px;
+    }
   }
 }
 </style>

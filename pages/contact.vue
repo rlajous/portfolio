@@ -270,7 +270,7 @@ export default {
     font-style: normal;
     line-height: 1.22;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: var(--black);
   }
 
@@ -390,6 +390,146 @@ export default {
           letter-spacing: normal;
           text-align: left;
           color: var(--black);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    min-height: calc(100vh - 110px);
+    height: fit-content;
+
+    .polygon {
+      display: none;
+    }
+
+    .title {
+      height: 3rem;
+      font-size: 2.5rem;
+      line-height: 1.22;
+    }
+
+    .subtitle {
+      height: fit-content;
+      font-size: 1.36rem;
+      line-height: 1.34;
+      text-align: center;
+      margin: auto;
+      width: 70%;
+      margin-bottom: 3rem;
+      top: 0;
+    }
+
+    .content {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+      .form {
+        width: 80%;
+        margin-bottom: 3rem;
+
+        .input {
+          width: 100%;
+          height: 2.8rem;
+          border-radius: 10px;
+          border: solid 0.3px #707070;
+          background-color: var(--white);
+          padding-left: 0.72rem;
+          font-family: 'Futura Lt BT';
+          font-size: 0.72rem;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 2.8rem;
+          letter-spacing: normal;
+          text-align: left;
+          color: var(--black);
+          margin-bottom: 0.6rem;
+        }
+
+        .textarea {
+          padding: 1.5rem;
+          width: 100%;
+          height: 6.45rem;
+          resize: none;
+          border-radius: 10px;
+          border: solid 0.3px #707070;
+          background-color: var(--white);
+          font-family: 'Futura Lt BT';
+          font-size: 0.72rem;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.32;
+          letter-spacing: normal;
+          text-align: left;
+          color: var(--black);
+          margin-bottom: 1.36rem;
+        }
+
+        .button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 45%;
+          height: 2rem;
+          border-radius: 10px;
+          background-color: var(--red-pink);
+          border: none;
+          font-family: 'Futura Hv BT';
+          font-size: 0.72rem;
+          font-weight: 900;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 2rem;
+          letter-spacing: normal;
+          text-align: center;
+          color: var(--white);
+          box-shadow: 5px 10px 10px 0 var(--black-16);
+        }
+      }
+
+      .info {
+        .info-title {
+          height: 1.8rem;
+          font-size: 1.36rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.33;
+          letter-spacing: normal;
+          text-align: left;
+          color: var(--black);
+          margin-bottom: 1.5rem;
+        }
+
+        .link {
+          margin-bottom: 1.9rem;
+          text-decoration: none;
+
+          .logo {
+            width: 1.72rem;
+            height: 1.72rem;
+            object-fit: contain;
+            margin-right: 1rem;
+          }
+
+          .text {
+            height: 1.36rem;
+            font-family: 'Futura Lt BT';
+            font-size: 1rem;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--black);
+          }
         }
       }
     }
