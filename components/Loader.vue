@@ -11,7 +11,7 @@
 <style lang="scss" scoped>
 .spinner {
   width: 3rem;
-  height: 2.5rem;
+  height: 1.5rem;
   text-align: center;
   font-size: 0.6rem;
   margin: auto;

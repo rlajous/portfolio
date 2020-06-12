@@ -54,6 +54,35 @@ export default {
     }
   }
 }
+
+@media (max-width: 460px) {
+  .modal {
+    height: 19rem;
+    position: relative;
+
+    .img {
+      height: 7rem;
+      margin-top: 2rem;
+    }
+
+    .message {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .button {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      background: transparent;
+      border: none;
+
+      .close {
+        height: 1.5rem;
+      }
+    }
+  }
+}
 </style>
 
 <style>
