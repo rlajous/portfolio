@@ -4,12 +4,20 @@ export default {
    ** Headers of the page
    */
   head: {
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: {
+    color: '#fff',
+  },
   /*
    ** Global CSS
    */
@@ -17,7 +25,16 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '@/plugins/vue-js-modal', ssr: false }],
+  plugins: [
+    {
+      src: '@/plugins/vue-js-modal',
+      ssr: false,
+    },
+    {
+      src: '~plugins//slide-menu',
+      ssr: false,
+    },
+  ],
   /*
    ** Nuxt.js dev-modules
    */

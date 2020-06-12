@@ -63,4 +63,10 @@ html {
 html {
   font-size: 0.8vw;
 }
+
+@media (max-width: 460px) {
+  html {
+    font-size: 11px;
+  }
+}
 </style>

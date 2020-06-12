@@ -311,4 +311,146 @@ export default {
     }
   }
 }
+
+@media (max-width: 460px) {
+  .content {
+    position: relative;
+    height: calc(100vh - 7.5rem);
+    overflow: hidden;
+    padding: 2.5% 10%;
+
+    .background-image {
+      position: absolute;
+      bottom: -9.25rem;
+      height: 35rem;
+      left: -15.25rem;
+      transform: rotate(31deg);
+      z-index: -1;
+    }
+
+    .portrait {
+      position: absolute;
+      top: 4rem;
+      right: -8.5rem;
+      width: 23rem;
+      height: 23rem;
+      object-fit: contain;
+    }
+
+    .title {
+      position: relative;
+      font-size: 2.7rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.34;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--soft-blue);
+      margin-bottom: 4.3rem;
+    }
+
+    .underline {
+      bottom: 2rem;
+      height: 1.5rem;
+      width: 50%;
+    }
+
+    .subtitle {
+      height: 2.5rem;
+      font-family: 'Futura Lt BT';
+      font-size: 1.4rem;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.5rem;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--black);
+      margin-bottom: 5.6rem;
+    }
+
+    .description {
+      position: relative;
+
+      .background {
+        position: absolute;
+        top: -3.4rem;
+        left: -0.15rem;
+        height: 5.5rem;
+        opacity: 0.1;
+        font-family: 'Impact';
+        font-size: 4.3rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--black);
+      }
+
+      .text {
+        width: 20rem;
+        height: 5.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--black);
+      }
+    }
+
+    .buttons {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+
+      .button {
+        width: 100%;
+        height: 2.6rem;
+        border-radius: 0.6rem;
+        box-shadow: 0.3rem 0.6rem 0.6rem 0 var(--black-16);
+        font-family: 'Futura Hv BT';
+        font-size: 1rem;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.6rem;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+        text-decoration: none;
+        border: none;
+        margin-bottom: 1rem;
+
+        &.hire {
+          background-color: var(--soft-blue);
+        }
+
+        &.download {
+          background-color: var(--red-pink);
+        }
+      }
+    }
+
+    .social {
+      width: 7.5rem;
+
+      .link {
+        text-decoration: none;
+        margin-top: 0.75rem;
+
+        .logo {
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
 </style>
