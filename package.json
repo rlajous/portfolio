@@ -28,11 +28,11 @@
     "@nuxtjs/pwa": "3.0.0-beta.20",
     "@nuxtjs/sitemap": "2.3.1",
     "nuxt": "2.12.2",
-    "vue-burger-menu": "^2.0.5",
+    "vue-burger-menu": "2.0.5",
     "vue-js-modal": "2.0.0-rc.3"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "1.0.2",
+    "@nuxt/typescript-build": "1.0.3",
     "@nuxtjs/eslint-config": "3.0.0",
     "@nuxtjs/eslint-module": "2.0.0",
     "@nuxtjs/google-analytics": "2.3.0",
@@ -50,7 +50,7 @@
     "gulp-cloudfront-invalidate-aws-publish": "1.0.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
-    "lint-staged": "10.2.9",
+    "lint-staged": "10.2.10",
     "node-sass": "4.14.1",
     "prettier": "2.0.5",
     "pug": "3.0.0",
