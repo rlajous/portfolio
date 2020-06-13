@@ -6,7 +6,7 @@
 
 [![DeepScan grade](https://deepscan.io/api/teams/9673/projects/12262/branches/187131/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9673&pid=12262&bid=187131)
 
-[![Build Status](http://circleci-badges-max.herokuapp.com/img/github/rlajous/portfolio/97/workflows/d81c9486-695d-469e-884e-89b494c08703?token=)](https://app.circleci.com/pipelines/github/rlajous/portfolio/97/workflows/d81c9486-695d-469e-884e-89b494c08703)
+[![CircleCI](https://circleci.com/gh/rlajous/portfolio.svg?style=svg)](https://app.circleci.com/pipelines/github/rlajous/portfolio)
 
 ## Build Setup
 
