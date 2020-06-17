@@ -25,7 +25,7 @@
               class="image"
             />
           </picture>
-          <div class="row">
+          <div class="row middle data space-between">
             <div class="column">
               <div class="name">
                 Project Name
@@ -34,9 +34,9 @@
                 Lorem Ipsum is simply dummy text of the printing
               </div>
             </div>
-            <div class="button">
+            <nuxt-link to="/" class="button">
               Explore
-            </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -138,10 +138,9 @@ export default {
 <style lang="scss" scoped>
 .content {
   .header {
-    height: 166px;
     opacity: 0.08;
     font-family: Impact;
-    font-size: 136px;
+    font-size: 8.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -149,13 +148,14 @@ export default {
     letter-spacing: normal;
     text-align: left;
     color: var(--black);
+    margin-bottom: 12.25rem;
   }
 
   .section {
+    width: 90%;
+
     .title {
-      height: 67px;
-      font-family: 'Futura';
-      font-size: 50px;
+      font-size: 3rem;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
@@ -163,6 +163,15 @@ export default {
       letter-spacing: normal;
       text-align: left;
       color: var(--black);
+      margin-bottom: 5rem;
+    }
+
+    .background {
+      transform: rotate(-6deg);
+      top: -31rem;
+      left: -36rem;
+      height: 72rem;
+      z-index: -1;
     }
 
     .projects {
@@ -178,46 +187,53 @@ export default {
           object-fit: contain;
         }
 
-        .name {
-          height: 47px;
-          font-family: Futura;
-          font-size: 35px;
-          font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.71;
-          letter-spacing: normal;
-          text-align: left;
-          color: var(--black);
-        }
+        .data {
+          padding-left: 2.5rem;
+          padding-right: 1.25rem;
+          height: 100%;
 
-        .description {
-          height: 24px;
-          font-family: FuturaLtBT;
-          font-size: 20px;
-          font-weight: 300;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.35;
-          letter-spacing: normal;
-          text-align: left;
-          color: var(--black);
-        }
+          .name {
+            height: 47px;
+            font-size: 35px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.71;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--black);
+            margin-bottom: 1.25rem;
+          }
 
-        .button {
-          width: 211px;
-          height: 55px;
-          border-radius: 20px;
-          background-color: var(--soft-blue);
-          font-family: FuturaHvBT;
-          font-size: 20px;
-          font-weight: 900;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 55px;
-          letter-spacing: normal;
-          text-align: center;
-          color: var(--white);
+          .description {
+            height: 24px;
+            font-family: 'Futura Lt BT';
+            font-size: 20px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.35;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--black);
+          }
+
+          .button {
+            width: 211px;
+            height: 55px;
+            border-radius: 20px;
+            background-color: var(--soft-blue);
+            font-family: 'Futura Hv BT';
+            font-size: 20px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 55px;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--white);
+            text-decoration: none;
+          }
         }
       }
     }
