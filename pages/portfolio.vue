@@ -18,9 +18,12 @@
       <div class="projects">
         <div class="project column">
           <picture>
-            <source srcset="~/assets/img/portrait.webp" type="image/webp" />
+            <source
+              srcset="~/assets/img/Screenshot_2@3x.webp"
+              type="image/webp"
+            />
             <img
-              src="~/assets/img/portrait.png"
+              src="~/assets/img/Screenshot_2@3x.png"
               alt="Portait of myself"
               class="image"
             />
@@ -153,6 +156,7 @@ export default {
 
   .section {
     width: 90%;
+    margin-bottom: 18rem;
 
     .title {
       font-size: 3rem;
@@ -176,14 +180,13 @@ export default {
 
     .projects {
       .project {
-        height: 704px;
-        border-radius: 20px;
+        height: fit-content;
+        border-radius: 2.5rem;
         box-shadow: 0 3px 15px 0 var(--black-16);
         background-color: var(--white);
 
         .image {
-          width: 850px;
-          height: 532px;
+          width: 100%;
           object-fit: contain;
         }
 
@@ -193,8 +196,9 @@ export default {
           height: 100%;
 
           .name {
-            height: 47px;
-            font-size: 35px;
+            margin-top: 2.8rem;
+
+            font-size: 2.2rem;
             font-weight: bold;
             font-stretch: normal;
             font-style: normal;
@@ -206,9 +210,8 @@ export default {
           }
 
           .description {
-            height: 24px;
             font-family: 'Futura Lt BT';
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 300;
             font-stretch: normal;
             font-style: normal;
@@ -216,6 +219,7 @@ export default {
             letter-spacing: normal;
             text-align: left;
             color: var(--black);
+            margin-bottom: 2.8rem;
           }
 
           .button {
