@@ -15,7 +15,59 @@
           class="absolute background"
         />
       </picture>
-      <div class="projects">
+      <div class="projects row wrap space-between">
+        <div class="project column">
+          <picture>
+            <source
+              srcset="~/assets/img/Screenshot_2@3x.webp"
+              type="image/webp"
+            />
+            <img
+              src="~/assets/img/Screenshot_2@3x.png"
+              alt="Portait of myself"
+              class="image"
+            />
+          </picture>
+          <div class="row middle data space-between">
+            <div class="column">
+              <div class="name">
+                Project Name
+              </div>
+              <div class="description">
+                Lorem Ipsum is simply dummy text of the printing
+              </div>
+            </div>
+            <nuxt-link to="/" class="button">
+              Explore
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="project column">
+          <picture>
+            <source
+              srcset="~/assets/img/Screenshot_2@3x.webp"
+              type="image/webp"
+            />
+            <img
+              src="~/assets/img/Screenshot_2@3x.png"
+              alt="Portait of myself"
+              class="image"
+            />
+          </picture>
+          <div class="row middle data space-between">
+            <div class="column">
+              <div class="name">
+                Project Name
+              </div>
+              <div class="description">
+                Lorem Ipsum is simply dummy text of the printing
+              </div>
+            </div>
+            <nuxt-link to="/" class="button">
+              Explore
+            </nuxt-link>
+          </div>
+        </div>
         <div class="project column">
           <picture>
             <source
@@ -152,6 +204,7 @@ export default {
     text-align: left;
     color: var(--black);
     margin-bottom: 12.25rem;
+    margin-top: 3rem;
   }
 
   .section {
@@ -180,14 +233,18 @@ export default {
 
     .projects {
       .project {
+        flex-basis: 40%;
         height: fit-content;
         border-radius: 2.5rem;
         box-shadow: 0 3px 15px 0 var(--black-16);
         background-color: var(--white);
+        min-width: 53rem;
+        margin-bottom: 2rem;
 
         .image {
           width: 100%;
           object-fit: contain;
+          border-radius: 2.5rem 0;
         }
 
         .data {
@@ -197,7 +254,6 @@ export default {
 
           .name {
             margin-top: 2.8rem;
-
             font-size: 2.2rem;
             font-weight: bold;
             font-stretch: normal;
@@ -223,20 +279,80 @@ export default {
           }
 
           .button {
-            width: 211px;
-            height: 55px;
-            border-radius: 20px;
+            width: 13.2rem;
+            height: 3.4rem;
+            border-radius: 1.25rem;
             background-color: var(--soft-blue);
             font-family: 'Futura Hv BT';
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 900;
             font-stretch: normal;
             font-style: normal;
-            line-height: 55px;
+            line-height: 3.4rem;
             letter-spacing: normal;
             text-align: center;
             color: var(--white);
             text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .content {
+    .header {
+      opacity: 0.08;
+      font-size: 3.5rem;
+      margin-bottom: 3.7rem;
+      margin-top: 3.5rem;
+    }
+
+    .section {
+      width: 80%;
+      margin-bottom: 18rem;
+
+      .title {
+        font-size: 1.7rem;
+        margin-bottom: 2.3rem;
+      }
+
+      .background {
+        top: -20rem;
+        left: -34rem;
+        height: 57rem;
+      }
+
+      .projects {
+        .project {
+          flex-basis: 100%;
+          border-radius: 2.5rem;
+          min-width: 22rem;
+          margin-bottom: 2rem;
+
+          .data {
+            padding-left: 2.5rem;
+            padding-right: 1.25rem;
+
+            .name {
+              margin-top: 0.3rem;
+              font-size: 0.8rem;
+              margin-bottom: 0.4rem;
+            }
+
+            .description {
+              font-size: 0.6rem;
+              margin-bottom: 0.6rem;
+            }
+
+            .button {
+              width: 4rem;
+              height: 1.5rem;
+              border-radius: 1.25rem;
+              font-size: 0.8rem;
+              line-height: 1.5rem;
+            }
           }
         }
       }
