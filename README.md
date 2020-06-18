@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 > Rodrigo Manuel Navarro Lajous Web Portfolio
 
