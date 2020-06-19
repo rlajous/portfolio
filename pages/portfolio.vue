@@ -96,6 +96,79 @@
         </div>
       </div>
     </div>
+    <div class="section relative">
+      <h2 class="title">
+        Company Name here
+      </h2>
+      <picture>
+        <source srcset="~/assets/img/Polygon_6.webp" type="image/webp" />
+        <img
+          src="~/assets/img/Polygon_6.png"
+          alt="Portait of myself"
+          class="absolute background"
+        />
+      </picture>
+      <div class="projects row wrap space-between">
+        <div class="project column">
+          <picture>
+            <source
+              srcset="~/assets/img/Screenshot_2@3x.webp"
+              type="image/webp"
+            />
+            <img
+              src="~/assets/img/Screenshot_2@3x.png"
+              alt="Portait of myself"
+              class="image"
+            />
+          </picture>
+          <div class="row middle data space-between">
+            <div class="column">
+              <div class="name">
+                Project Name
+              </div>
+              <div class="description">
+                Lorem Ipsum is simply dummy text of the printing
+              </div>
+            </div>
+            <nuxt-link to="/" class="button">
+              Explore
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      class="more-experience relative"
+      href="https://github.com/rlajous"
+      target="_blank"
+      rel="nofollow noreferrer noopener"
+    >
+      <picture>
+        <source srcset="~/assets/img/Polygon_6.webp" type="image/webp" />
+        <img
+          src="~/assets/img/Polygon_6.png"
+          alt="Portait of myself"
+          class="absolute background"
+        />
+      </picture>
+      <div class="text">
+        See my projects also on
+      </div>
+      <picture>
+        <source
+          srcset="~/assets/img/icons8_GitHub_96px@3x.webp"
+          type="image/webp"
+        />
+        <img
+          src="~/assets/img/icons8_GitHub_96px@3x.png"
+          alt="Portait of myself"
+          class="icon"
+        />
+      </picture>
+      <div class="text">
+        https://github.com/rlajous
+      </div>
+    </a>
   </div>
 </template>
 
@@ -220,6 +293,7 @@ export default {
       letter-spacing: normal;
       text-align: left;
       color: var(--black);
+      margin-left: 1rem;
       margin-bottom: 5rem;
     }
 
@@ -234,11 +308,13 @@ export default {
     .projects {
       .project {
         flex-basis: 40%;
+        flex-grow: 1;
         height: fit-content;
         border-radius: 2.5rem;
         box-shadow: 0 3px 15px 0 var(--black-16);
         background-color: var(--white);
         min-width: 53rem;
+        margin: 0 1rem;
         margin-bottom: 2rem;
 
         .image {
@@ -298,6 +374,44 @@ export default {
       }
     }
   }
+
+  .more-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 47rem;
+    height: 28rem;
+    border-radius: 4.4rem;
+    box-shadow: 0 3px 20px 0 var(--black-16);
+    background-color: var(--white);
+    text-decoration: none;
+    margin-bottom: 23rem;
+
+    .background {
+      transform: rotate(7deg);
+      top: -27rem;
+      left: 0rem;
+      height: 72rem;
+      z-index: -1;
+    }
+
+    .text {
+      font-size: 2rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.34;
+      letter-spacing: normal;
+      text-align: center;
+      color: var(--black);
+    }
+
+    .icon {
+      width: 6rem;
+      margin: 3rem 0;
+    }
+  }
 }
 
 @media (max-width: 460px) {
@@ -305,13 +419,13 @@ export default {
     .header {
       opacity: 0.08;
       font-size: 3.5rem;
-      margin-bottom: 3.7rem;
-      margin-top: 3.5rem;
+      margin-bottom: 5.7rem;
+      margin-top: 1.5rem;
     }
 
     .section {
       width: 80%;
-      margin-bottom: 18rem;
+      margin-bottom: 8rem;
 
       .title {
         font-size: 1.7rem;
@@ -355,6 +469,29 @@ export default {
             }
           }
         }
+      }
+    }
+
+    .more-experience {
+      width: 21rem;
+      height: 13.6rem;
+      border-radius: 2rem;
+      margin-bottom: 11rem;
+
+      .background {
+        transform: rotate(5deg);
+        top: -13rem;
+        left: -2rem;
+        height: 35rem;
+      }
+
+      .text {
+        font-size: 1.1rem;
+      }
+
+      .icon {
+        width: 4rem;
+        margin: 1rem 0;
       }
     }
   }
