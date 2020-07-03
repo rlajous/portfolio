@@ -27,7 +27,7 @@
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/pwa": "3.0.0-beta.20",
     "@nuxtjs/sitemap": "2.4.0",
-    "nuxt": "2.13.2",
+    "nuxt": "2.13.3",
     "vue-burger-menu": "2.0.5",
     "vue-js-modal": "2.0.0-rc.3"
   },
