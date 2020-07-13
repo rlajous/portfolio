@@ -19,7 +19,7 @@
         <nuxt-link to="/about" class="text" exact-active-class="active">
           About Me
         </nuxt-link>
-        <nuxt-link to="/portfolio" class="text" exact-active-class="active">
+        <!-- <nuxt-link to="/portfolio" class="text" exact-active-class="active">
           My Portfolio
         </nuxt-link>
         <nuxt-link
@@ -28,7 +28,7 @@
           exact-active-class="active"
         >
           Recomendations
-        </nuxt-link>
+        </nuxt-link> -->
         <nuxt-link to="/contact" class="button">
           Contact Me
         </nuxt-link>
@@ -60,7 +60,7 @@
           <nuxt-link to="/about" class="text" exact-active-class="active">
             About Me
           </nuxt-link>
-          <nuxt-link to="/portfolio" class="text" exact-active-class="active">
+          <!-- <nuxt-link to="/portfolio" class="text" exact-active-class="active">
             My Portfolio
           </nuxt-link>
           <nuxt-link
@@ -69,7 +69,7 @@
             exact-active-class="active"
           >
             Recomendations
-          </nuxt-link>
+          </nuxt-link> -->
           <nuxt-link to="/contact" class="button">
             Contact Me
           </nuxt-link>
@@ -106,7 +106,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 60%;
+    width: 35%;
     justify-content: space-between;
 
     .text {
