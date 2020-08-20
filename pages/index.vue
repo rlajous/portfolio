@@ -41,9 +41,9 @@
       </h3>
     </div>
     <div class="buttons row space-between">
-      <button class="button download">
+      <!-- <button class="button download">
         Download CV
-      </button>
+      </button> -->
       <nuxt-link to="/contact" class="button hire">
         Hire Me
       </nuxt-link>
