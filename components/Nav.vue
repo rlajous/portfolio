@@ -2,7 +2,7 @@
   <nav class="nav-container row space-between middle">
     <div class="desktop nav">
       <nuxt-link to="/">
-        <picture v-if="nightMode">
+        <picture v-if="$colorMode.preference === 'dark'">
           <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
           <source srcset="~/assets/img/logo-white.webp" type="image/webp" />
           <img
@@ -42,10 +42,16 @@
           Contact Me
         </nuxt-link>
         <label class="switch">
-          <input type="checkbox" @click="togleMode" />
+          <input
+            type="checkbox"
+            :checked="$colorMode.preference === 'dark'"
+            @click="togleMode"
+          />
           <span
             class="slider round"
-            :class="[nightMode ? 'dark-mode' : 'light-mode']"
+            :class="[
+              $colorMode.preference === 'dark' ? 'dark-mode' : 'light-mode',
+            ]"
           ></span>
         </label>
       </div>
@@ -108,7 +114,7 @@ export default {
   data() {
     return {
       colors: ['light', 'dark'],
-      nightMode: false,
+      nightMode: this.$colorMode.preference === 'dark',
     }
   },
   methods: {
