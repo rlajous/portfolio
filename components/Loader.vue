@@ -11,7 +11,7 @@
 <style lang="scss" scoped>
 .spinner {
   width: 3rem;
-  height: 1.5rem;
+  height: 2.5rem;
   text-align: center;
   font-size: 0.6rem;
   margin: auto;
@@ -68,6 +68,17 @@
   20% {
     transform: scaleY(1);
     -webkit-transform: scaleY(1);
+  }
+}
+
+@media (max-width: 460px) {
+  .spinner {
+    height: 1.5rem;
+    font-size: 0.6rem;
+  }
+
+  .spinner > div {
+    width: 0.23rem;
   }
 }
 </style>

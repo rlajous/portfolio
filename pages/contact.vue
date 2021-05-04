@@ -45,7 +45,7 @@
           class="input"
           type="text"
           name="name"
-          tabindex="3"
+          tabindex="0"
           placeholder="Full Name"
           required
         />
@@ -54,7 +54,7 @@
           class="input"
           type="email"
           name="email"
-          tabindex="3"
+          tabindex="1"
           placeholder="Email"
           required
         />
@@ -63,11 +63,17 @@
           class="textarea"
           type="text"
           name="message"
-          tabindex="3"
+          tabindex="2"
           required
           placeholder="Tell me how can I help you"
         ></textarea>
-        <button id="contact-submit" class="button" type="submit" name="submit">
+        <button
+          id="contact-submit"
+          class="button"
+          type="submit"
+          name="submit"
+          tabindex="3"
+        >
           <Loader v-if="loading" />
           <span v-else>
             Send Now
@@ -122,7 +128,7 @@ export default {
       name: '',
       email: '',
       message: '',
-      loading: false,
+      loading: true,
     }
   },
   methods: {

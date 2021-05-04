@@ -3,6 +3,7 @@
     <div class="desktop nav">
       <nuxt-link to="/">
         <Logo />
+        <span class="visible-hidden">Home</span>
       </nuxt-link>
       <div class="links">
         <nuxt-link to="/" class="text" exact-active-class="active">
@@ -24,8 +25,12 @@
         <nuxt-link to="/contact" class="button">
           Contact Me
         </nuxt-link>
-        <label class="switch">
+        <label class="switch" for="toggle-dark-light-mode">
+          <span class="visible-hidden"
+            >Toggle button to change web theme from dark to light</span
+          >
           <input
+            id="toggle-dark-light-mode"
             type="checkbox"
             :checked="$colorMode.preference === 'dark'"
             @click="togleMode"
@@ -41,15 +46,8 @@
     </div>
     <no-ssr>
       <nuxt-link to="/" class="responsive">
-        <picture>
-          <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
-          <source srcset="~/assets/img/logo.webp" type="image/webp" />
-          <img
-            src="~/assets/img/logo.png"
-            alt="My Logo, a tree inside a circle"
-            class="logo"
-          />
-        </picture>
+        <Logo />
+        <span class="visible-hidden">Home</span>
       </nuxt-link>
       <SlideMenu
         :close-on-navigation="true"
@@ -78,8 +76,15 @@
           <nuxt-link to="/contact" class="button">
             Contact Me
           </nuxt-link>
-          <label class="switch">
-            <input type="checkbox" @click="togleMode" />
+          <label class="switch" for="toggle-dark-light-mode">
+            <span class="visible-hidden"
+              >Toggle button to change web theme from dark to light</span
+            >
+            <input
+              id="toggle-dark-light-mode"
+              type="checkbox"
+              @click="togleMode"
+            />
             <span
               class="slider round"
               :class="[nightMode ? 'dark-mode' : 'light-mode']"
