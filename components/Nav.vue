@@ -2,24 +2,7 @@
   <nav class="nav-container row space-between middle">
     <div class="desktop nav">
       <nuxt-link to="/">
-        <picture v-if="$colorMode.preference === 'dark'">
-          <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
-          <source srcset="~/assets/img/logo-white.webp" type="image/webp" />
-          <img
-            src="~/assets/img/logo-white.png"
-            alt="My Logo, a tree inside a circle"
-            class="logo"
-          />
-        </picture>
-        <picture v-else>
-          <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
-          <source srcset="~/assets/img/logo.webp" type="image/webp" />
-          <img
-            src="~/assets/img/logo.png"
-            alt="My Logo, a tree inside a circle"
-            class="logo"
-          />
-        </picture>
+        <Logo />
       </nuxt-link>
       <div class="links">
         <nuxt-link to="/" class="text" exact-active-class="active">
@@ -109,8 +92,13 @@
 </template>
 
 <script>
+import Logo from '~/components/Logo.vue'
+
 export default {
   name: 'Navbar',
+  components: {
+    Logo,
+  },
   data() {
     return {
       colors: ['light', 'dark'],
@@ -238,7 +226,12 @@ input:checked + .slider:before {
   justify-content: space-between;
 
   .logo {
-    height: 6.25rem;
+    height: 4.5rem;
+
+    path {
+      stroke: var(--text-color) !important;
+      fill: var(--text-color) !important;
+    }
   }
 
   .links {
