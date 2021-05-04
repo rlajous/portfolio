@@ -40,6 +40,30 @@ export default Vue.extend({
   --robin-egg-blue: #8eeeff;
   --red-pink: #f5365c;
   --pale-grey: #f3f4fb;
+  --charcoal-grey: #323544;
+  --dark: #222231;
+
+  --color: #243746;
+  --text-color: var(--black);
+  --color-primary: var(--soft-blue);
+  --color-primary-light: var(--denim-blue);
+  --color-secondary: #0e2233;
+  --card-bg: var(--white);
+  --bg: var(--white);
+  --bg-secondary: #fff;
+  --border-color: #ddd;
+}
+
+.dark-mode {
+  --color: #ebf4f1;
+  --text-color: var(--white);
+  --color-primary: var(--aqua-blue);
+  --color-primary-light: var(--robin-egg-blue);
+  --color-secondary: #fdf9f3;
+  --card-bg: var(--dark);
+  --bg: var(--charcoal-grey);
+  --bg-secondary: #071521;
+  --border-color: #0d2538;
 }
 
 html {
@@ -62,6 +86,14 @@ html {
 
 html {
   font-size: 0.8vw;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.bm-burger-bars {
+  background-color: var(card-bg) !important;
 }
 
 @media (max-width: 460px) {

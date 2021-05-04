@@ -271,7 +271,7 @@ export default {
     line-height: 1.22;
     letter-spacing: normal;
     text-align: center;
-    color: var(--black);
+    color: var(--text-color);
   }
 
   .subtitle {
@@ -284,7 +284,7 @@ export default {
     line-height: 1.34;
     letter-spacing: normal;
     text-align: center;
-    color: var(--black);
+    color: var(--text-color);
     top: -3.5rem;
   }
 
@@ -365,7 +365,7 @@ export default {
         line-height: 1.33;
         letter-spacing: normal;
         text-align: left;
-        color: var(--black);
+        color: var(--text-color);
         margin-bottom: 2.5rem;
       }
 
@@ -389,7 +389,7 @@ export default {
           line-height: 1.33;
           letter-spacing: normal;
           text-align: left;
-          color: var(--black);
+          color: var(--text-color);
         }
       }
     }
@@ -503,7 +503,7 @@ export default {
           line-height: 1.33;
           letter-spacing: normal;
           text-align: left;
-          color: var(--black);
+          color: var(--text-color);
           margin-bottom: 1.5rem;
         }
 
@@ -528,7 +528,7 @@ export default {
             line-height: 1.33;
             letter-spacing: normal;
             text-align: left;
-            color: var(--black);
+            color: var(--text-color);
           }
         }
       }

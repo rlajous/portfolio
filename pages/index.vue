@@ -22,11 +22,46 @@
       </h1>
       <picture>
         <!-- <source srcset="~/assets/img/portrait.webp" type="image/webp"> -->
-        <img
-          src="~/assets/img/svg/Group 5.svg"
-          alt="background image"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
           class="absolute underline"
-        />
+          viewBox="0 0 228 22"
+        >
+          <g id="Group_5" data-name="Group 5" transform="translate(-1644 -559)">
+            <line
+              id="Line_1"
+              data-name="Line 1"
+              x2="183"
+              transform="translate(1646.5 570.5)"
+              fill="none"
+              stroke="#5e72e4"
+              stroke-linecap="round"
+              stroke-width="5"
+            />
+            <g id="Group_1" data-name="Group 1" transform="translate(247 57)">
+              <g
+                id="Ellipse_1"
+                data-name="Ellipse 1"
+                transform="translate(1603 502)"
+                fill="none"
+                stroke="#5e72e4"
+                stroke-width="1"
+              >
+                <circle cx="11" cy="11" r="11" stroke="none" />
+                <circle cx="11" cy="11" r="10.5" fill="none" />
+              </g>
+              <circle
+                id="Ellipse_2"
+                data-name="Ellipse 2"
+                cx="7"
+                cy="7"
+                r="7"
+                transform="translate(1607 506)"
+                fill="#5e72e4"
+              />
+            </g>
+          </g>
+        </svg>
       </picture>
     </div>
     <h2 class="subtitle">
@@ -209,13 +244,25 @@ export default {
     line-height: 1.34;
     letter-spacing: normal;
     text-align: left;
-    color: var(--soft-blue);
+    color: var(--color-primary);
     margin-bottom: 4.3rem;
   }
 
   .underline {
     bottom: 2rem;
     height: 1.5rem;
+
+    line {
+      stroke: var(--color-primary);
+    }
+
+    #Ellipse_1 {
+      stroke: var(--color-primary);
+    }
+
+    #Ellipse_2 {
+      fill: var(--color-primary);
+    }
   }
 
   .subtitle {
@@ -228,7 +275,7 @@ export default {
     line-height: 2.5rem;
     letter-spacing: normal;
     text-align: left;
-    color: var(--black);
+    color: var(--text-color);
     margin-bottom: 5.6rem;
   }
 
@@ -249,7 +296,7 @@ export default {
       line-height: 1.22;
       letter-spacing: normal;
       text-align: left;
-      color: var(--black);
+      color: var(--text-color);
     }
 
     .text {
@@ -262,7 +309,7 @@ export default {
       line-height: 1.33;
       letter-spacing: normal;
       text-align: left;
-      color: var(--black);
+      color: var(--text-color);
     }
   }
 
@@ -287,7 +334,7 @@ export default {
       border: none;
 
       &.hire {
-        background-color: var(--soft-blue);
+        background-color: var(--color-primary);
       }
 
       &.download {
@@ -346,7 +393,7 @@ export default {
       line-height: 1.34;
       letter-spacing: normal;
       text-align: left;
-      color: var(--soft-blue);
+      color: var(--color-primary);
       margin-bottom: 4.3rem;
     }
 
@@ -366,7 +413,7 @@ export default {
       line-height: 2.5rem;
       letter-spacing: normal;
       text-align: left;
-      color: var(--black);
+      color: var(--text-color);
       margin-bottom: 5.6rem;
     }
 
@@ -387,7 +434,7 @@ export default {
         line-height: 1.22;
         letter-spacing: normal;
         text-align: left;
-        color: var(--black);
+        color: var(--text-color);
       }
 
       .text {
@@ -400,7 +447,7 @@ export default {
         line-height: 1.33;
         letter-spacing: normal;
         text-align: left;
-        color: var(--black);
+        color: var(--text-color);
       }
     }
 

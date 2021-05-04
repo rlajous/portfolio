@@ -186,7 +186,7 @@ export default {
   line-height: 1.22;
   letter-spacing: normal;
   text-align: left;
-  color: var(--black);
+  color: var(--text-color);
 }
 
 .subtitle {
@@ -200,7 +200,7 @@ export default {
   line-height: 1.34;
   letter-spacing: normal;
   text-align: center;
-  color: var(--black);
+  color: var(--text-color);
 }
 
 .underline {
@@ -230,7 +230,7 @@ export default {
   -webkit-backdrop-filter: blur(1.8rem);
   backdrop-filter: blur(1.8rem);
   box-shadow: 0 3px 15px 0 var(--black-16);
-  background-color: var(--white);
+  background-color: var(--card-bg);
   position: relative;
 
   .icon {
@@ -261,12 +261,12 @@ export default {
     line-height: 1.35;
     letter-spacing: normal;
     text-align: center;
-    color: var(--black);
+    color: var(--text-color);
   }
 
   .divider {
     margin-top: 1.3rem;
-    border: 1px solid var(--soft-blue);
+    border: 1px solid var(--color-primary);
     width: 6rem;
     margin-bottom: 1.6rem;
   }
@@ -282,7 +282,7 @@ export default {
     line-height: 1.31;
     letter-spacing: normal;
     text-align: center;
-    color: var(--black);
+    color: var(--text-color);
     margin-bottom: 3.75rem;
   }
 
@@ -297,7 +297,7 @@ export default {
     line-height: 1.31;
     letter-spacing: normal;
     text-align: left;
-    color: var(--black);
+    color: var(--text-color);
     margin-bottom: 0.5rem;
   }
 
@@ -311,7 +311,7 @@ export default {
     line-height: 1.35;
     letter-spacing: normal;
     text-align: left;
-    color: var(--black);
+    color: var(--text-color);
     margin-bottom: 1.75rem;
   }
 }
