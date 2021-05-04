@@ -76,12 +76,12 @@
           <nuxt-link to="/contact" class="button">
             Contact Me
           </nuxt-link>
-          <label class="switch" for="toggle-dark-light-mode">
+          <label class="switch" for="toggle-dark-light-mode-mobile">
             <span class="visible-hidden"
               >Toggle button to change web theme from dark to light</span
             >
             <input
-              id="toggle-dark-light-mode"
+              id="toggle-dark-light-mode-mobile"
               type="checkbox"
               @click="togleMode"
             />

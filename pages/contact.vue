@@ -54,7 +54,7 @@
           class="input"
           type="email"
           name="email"
-          tabindex="1"
+          tabindex="0"
           placeholder="Email"
           required
         />
@@ -63,7 +63,7 @@
           class="textarea"
           type="text"
           name="message"
-          tabindex="2"
+          tabindex="0"
           required
           placeholder="Tell me how can I help you"
         ></textarea>
@@ -72,7 +72,7 @@
           class="button"
           type="submit"
           name="submit"
-          tabindex="3"
+          tabindex="0"
         >
           <Loader v-if="loading" />
           <span v-else>
@@ -128,7 +128,7 @@ export default {
       name: '',
       email: '',
       message: '',
-      loading: true,
+      loading: false,
     }
   },
   methods: {
