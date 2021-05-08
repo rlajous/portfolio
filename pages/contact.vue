@@ -268,7 +268,7 @@ export default {
 
   .title {
     height: 10rem;
-    opacity: 0.08;
+    opacity: 0.5;
     font-family: 'Impact';
     font-size: 8.5rem;
     font-weight: normal;
@@ -277,7 +277,7 @@ export default {
     line-height: 1.22;
     letter-spacing: normal;
     text-align: center;
-    color: var(--text-color);
+    color: var(--color-primary);
   }
 
   .subtitle {
@@ -291,7 +291,6 @@ export default {
     letter-spacing: normal;
     text-align: center;
     color: var(--text-color);
-    top: -3.5rem;
   }
 
   .content {
@@ -346,7 +345,7 @@ export default {
         width: 45%;
         height: 4rem;
         border-radius: 10px;
-        background-color: var(--red-pink);
+        background-color: var(--color-primary);
         border: none;
         font-family: 'Futura Hv BT';
         font-size: 1.6rem;
@@ -477,24 +476,11 @@ export default {
         }
 
         .button {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
           width: 45%;
           height: 2rem;
           border-radius: 10px;
-          background-color: var(--red-pink);
-          border: none;
-          font-family: 'Futura Hv BT';
           font-size: 0.72rem;
-          font-weight: 900;
-          font-stretch: normal;
-          font-style: normal;
           line-height: 2rem;
-          letter-spacing: normal;
-          text-align: center;
-          color: var(--white);
           box-shadow: 5px 10px 10px 0 var(--black-16);
         }
       }

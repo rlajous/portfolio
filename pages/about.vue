@@ -177,7 +177,7 @@ export default {
 }
 
 .title {
-  opacity: 0.08;
+  opacity: 0.5;
   font-family: 'Impact';
   font-size: 8.5rem;
   font-weight: normal;
@@ -186,11 +186,11 @@ export default {
   line-height: 1.22;
   letter-spacing: normal;
   text-align: left;
-  color: var(--text-color);
+  color: var(--color-primary);
 }
 
 .subtitle {
-  top: -4rem;
+  margin-bottom: 2rem;
   width: 55%;
   font-family: 'Futura Bk BT';
   font-size: 2rem;

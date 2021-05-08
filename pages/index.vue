@@ -68,9 +68,9 @@
       Full Stack Developer
     </h2>
     <div class="description">
-      <span class="background">
+      <div class="background">
         Hi
-      </span>
+      </div>
       <h3 class="text">
         I am passionate with scuba, I love my two dogs, I love to draw
       </h3>
@@ -276,18 +276,15 @@ export default {
     letter-spacing: normal;
     text-align: left;
     color: var(--text-color);
-    margin-bottom: 5.6rem;
+    margin-bottom: 0.6rem;
   }
 
   .description {
     position: relative;
 
     .background {
-      position: absolute;
-      top: -5rem;
-      left: -0.6rem;
       height: 10.3rem;
-      opacity: 0.1;
+      opacity: 0.5;
       font-family: 'Impact';
       font-size: 8rem;
       font-weight: normal;
@@ -296,7 +293,7 @@ export default {
       line-height: 1.22;
       letter-spacing: normal;
       text-align: left;
-      color: var(--text-color);
+      color: var(--color-primary);
     }
 
     .text {

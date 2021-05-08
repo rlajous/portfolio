@@ -12,9 +12,10 @@
         <nuxt-link to="/about" class="text" exact-active-class="active">
           About Me
         </nuxt-link>
-        <!-- <nuxt-link to="/portfolio" class="text" exact-active-class="active">
+        <nuxt-link to="/portfolio" class="text" exact-active-class="active">
           My Portfolio
         </nuxt-link>
+        <!--
         <nuxt-link
           to="/recomendations"
           class="text"
@@ -63,9 +64,10 @@
           <nuxt-link to="/about" class="text" exact-active-class="active">
             About Me
           </nuxt-link>
-          <!-- <nuxt-link to="/portfolio" class="text" exact-active-class="active">
+          <nuxt-link to="/portfolio" class="text" exact-active-class="active">
             My Portfolio
           </nuxt-link>
+          <!--
           <nuxt-link
             to="/recomendations"
             class="text"
@@ -243,7 +245,7 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 35%;
+    width: 50%;
     justify-content: space-between;
 
     .text {

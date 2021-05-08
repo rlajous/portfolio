@@ -92,8 +92,14 @@ body {
   background-color: var(--bg);
 }
 
-.bm-burger-bars {
-  background-color: var(card-bg) !important;
+.bm-burger-button {
+  .bm-burger-bars {
+    background-image: linear-gradient(
+      to left,
+      var(--color-primary-light),
+      var(--color-primary)
+    );
+  }
 }
 
 .visible-hidden {

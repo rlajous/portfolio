@@ -5,7 +5,7 @@
     </h1>
     <div class="section relative">
       <h2 class="title">
-        Company Name here
+        Freelance
       </h2>
       <picture>
         <source srcset="~/assets/img/Polygon_6.webp" type="image/webp" />
@@ -18,12 +18,9 @@
       <div class="projects row wrap space-between">
         <div class="project column">
           <picture>
-            <source
-              srcset="~/assets/img/Screenshot_2@3x.webp"
-              type="image/webp"
-            />
+            <source srcset="~/assets/img/weareseeders.webp" type="image/webp" />
             <img
-              src="~/assets/img/Screenshot_2@3x.png"
+              src="~/assets/img/weareseeders.jpeg"
               alt="Portait of myself"
               class="image"
             />
@@ -31,25 +28,27 @@
           <div class="row middle data space-between">
             <div class="column">
               <div class="name">
-                Project Name
+                Seeds Landing Page
               </div>
               <div class="description">
-                Lorem Ipsum is simply dummy text of the printing
+                5 section website development in Vue.js
               </div>
             </div>
-            <nuxt-link to="/" class="button">
+            <a
+              href="https://weareseeders.navarrolajous.com/"
+              class="button"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+            >
               Explore
-            </nuxt-link>
+            </a>
           </div>
         </div>
         <div class="project column">
           <picture>
-            <source
-              srcset="~/assets/img/Screenshot_2@3x.webp"
-              type="image/webp"
-            />
+            <source srcset="~/assets/img/bepanthene.webp" type="image/webp" />
             <img
-              src="~/assets/img/Screenshot_2@3x.png"
+              src="~/assets/img/bepanthene.jpeg"
               alt="Portait of myself"
               class="image"
             />
@@ -57,48 +56,27 @@
           <div class="row middle data space-between">
             <div class="column">
               <div class="name">
-                Project Name
+                Bepanthene
               </div>
               <div class="description">
-                Lorem Ipsum is simply dummy text of the printing
+                Website layout update in Vue.js
               </div>
             </div>
-            <nuxt-link to="/" class="button">
+            <a
+              href="http://bepanthene.navarrolajous.com/"
+              class="button"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+            >
               Explore
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="project column">
-          <picture>
-            <source
-              srcset="~/assets/img/Screenshot_2@3x.webp"
-              type="image/webp"
-            />
-            <img
-              src="~/assets/img/Screenshot_2@3x.png"
-              alt="Portait of myself"
-              class="image"
-            />
-          </picture>
-          <div class="row middle data space-between">
-            <div class="column">
-              <div class="name">
-                Project Name
-              </div>
-              <div class="description">
-                Lorem Ipsum is simply dummy text of the printing
-              </div>
-            </div>
-            <nuxt-link to="/" class="button">
-              Explore
-            </nuxt-link>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div class="section relative">
       <h2 class="title">
-        Company Name here
+        Games
       </h2>
       <picture>
         <source srcset="~/assets/img/Polygon_6.webp" type="image/webp" />
@@ -111,12 +89,9 @@
       <div class="projects row wrap space-between">
         <div class="project column">
           <picture>
-            <source
-              srcset="~/assets/img/Screenshot_2@3x.webp"
-              type="image/webp"
-            />
+            <source srcset="~/assets/img/funnis.webp" type="image/webp" />
             <img
-              src="~/assets/img/Screenshot_2@3x.png"
+              src="~/assets/img/funnis.jpeg"
               alt="Portait of myself"
               class="image"
             />
@@ -124,15 +99,21 @@
           <div class="row middle data space-between">
             <div class="column">
               <div class="name">
-                Project Name
+                Funnis
               </div>
               <div class="description">
-                Lorem Ipsum is simply dummy text of the printing
+                Game for 1 or more players about Football-tennis developed in
+                Unity
               </div>
             </div>
-            <nuxt-link to="/" class="button">
+            <a
+              href="https://funnis.navarrolajous.com/"
+              class="button"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+            >
               Explore
-            </nuxt-link>
+            </a>
           </div>
         </div>
       </div>
@@ -266,7 +247,7 @@ export default {
 <style lang="scss" scoped>
 .content {
   .header {
-    opacity: 0.08;
+    opacity: 0.4;
     font-family: Impact;
     font-size: 8.5rem;
     font-weight: normal;
@@ -275,7 +256,7 @@ export default {
     line-height: 1.22;
     letter-spacing: normal;
     text-align: left;
-    color: var(--black);
+    color: var(--color-primary);
     margin-bottom: 12.25rem;
     margin-top: 3rem;
   }
@@ -292,7 +273,7 @@ export default {
       line-height: 1.34;
       letter-spacing: normal;
       text-align: left;
-      color: var(--black);
+      color: var(--text-color);
       margin-left: 1rem;
       margin-bottom: 5rem;
     }
@@ -319,8 +300,8 @@ export default {
 
         .image {
           width: 100%;
-          object-fit: contain;
-          border-radius: 2.5rem 0;
+          object-fit: cover;
+          border-radius: 2.5rem 2.5rem 0 0;
         }
 
         .data {
@@ -330,7 +311,7 @@ export default {
 
           .name {
             margin-top: 2.8rem;
-            font-size: 2.2rem;
+            font-size: 2.8rem;
             font-weight: bold;
             font-stretch: normal;
             font-style: normal;
@@ -343,7 +324,7 @@ export default {
 
           .description {
             font-family: 'Futura Lt BT';
-            font-size: 1.25rem;
+            font-size: 2rem;
             font-weight: 300;
             font-stretch: normal;
             font-style: normal;
@@ -356,15 +337,15 @@ export default {
 
           .button {
             width: 13.2rem;
-            height: 3.4rem;
+            height: 4rem;
             border-radius: 1.25rem;
-            background-color: var(--soft-blue);
+            background-color: var(--color-primary);
             font-family: 'Futura Hv BT';
-            font-size: 1.25rem;
+            font-size: 2rem;
             font-weight: 900;
             font-stretch: normal;
             font-style: normal;
-            line-height: 3.4rem;
+            line-height: 4rem;
             letter-spacing: normal;
             text-align: center;
             color: var(--white);
@@ -417,8 +398,7 @@ export default {
 @media (max-width: 460px) {
   .content {
     .header {
-      opacity: 0.08;
-      font-size: 3.5rem;
+      font-size: 4rem;
       margin-bottom: 5.7rem;
       margin-top: 1.5rem;
     }
@@ -428,7 +408,7 @@ export default {
       margin-bottom: 8rem;
 
       .title {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
         margin-bottom: 2.3rem;
       }
 
@@ -451,21 +431,21 @@ export default {
 
             .name {
               margin-top: 0.3rem;
-              font-size: 0.8rem;
+              font-size: 1rem;
               margin-bottom: 0.4rem;
             }
 
             .description {
-              font-size: 0.6rem;
+              font-size: 0.8rem;
               margin-bottom: 0.6rem;
             }
 
             .button {
-              width: 4rem;
-              height: 1.5rem;
-              border-radius: 1.25rem;
+              width: 5rem;
+              height: 2rem;
+              border-radius: 1.5rem;
               font-size: 0.8rem;
-              line-height: 1.5rem;
+              line-height: 2rem;
             }
           }
         }
