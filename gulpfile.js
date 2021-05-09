@@ -30,7 +30,6 @@ const config = {
   cacheFileName: '.awspublish',
   concurrentUploads: 10,
   wait: true, // wait for CloudFront invalidation to complete (about 30-60 seconds)
-  originPath: '*',
 }
 
 gulp.task('deploy', function () {
