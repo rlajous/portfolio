@@ -1,7 +1,10 @@
 <template>
   <div class="container column center">
-    <button v-if="!user" class="button" @click="login">Login</button>
-    <button v-else class="button" @click="logOut">Logout</button>
+    <button v-if="!user" class="button" @click="login">Conect Wallet</button>
+    <div v-else class="column">
+      <button class="button" @click="getStats">Refresh Stats</button>
+      <button class="button" @click="logOut">Disconect Wallet</button>
+    </div>
     <div v-if="user" class="column center w-100">
       <div class="card column start">
         <div class="column start space-between">
