@@ -26,7 +26,7 @@
     "@babel/preset-env": "^7.12.17",
     "@nuxtjs/axios": "5.12.1",
     "@nuxtjs/dotenv": "1.4.1",
-    "@nuxtjs/pwa": "3.0.0-beta.20",
+    "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/sitemap": "2.4.0",
     "cwebp": "^2.0.5",
     "moralis": "0.0.21",
