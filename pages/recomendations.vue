@@ -3,31 +3,39 @@
     <button v-if="!user" class="button" @click="login">Login</button>
     <button v-else class="button" @click="logOut">Logout</button>
     <div v-if="user" class="column center w-100">
-      <div class="card column center">
-        <div class="column center space-between">
-          <div class="name m-r-1">
-            Address
+      <div class="card column start">
+        <div class="column start space-between">
+          <div class="name">
+            Your Address
           </div>
           <div class="name">
             {{ user.attributes.ethAddress }}
           </div>
         </div>
       </div>
+      <div class="title">
+        Gas Fee Leaderboard
+      </div>
       <div v-if="gasFees && gasFees.length" class="column center w-100">
         <div
           v-for="gasFee in gasFees"
           :key="gasFee.objectId"
-          class="card column center"
+          :class="[
+            gasFee.objectId === user.attributes.ethAddress
+              ? 'card column start selected'
+              : 'card column start',
+          ]"
         >
-          <div class="row center space-between">
-            <div class="name">
-              Gas Fee
-            </div>
-            <div class="name">
-              {{ gasFee.avgGas }}
-            </div>
+          <div class="column start space-between">
+            <div class="name">Address:</div>
+            <div class="name">{{ gasFee.objectId }}</div>
+            <div class="name">Average Gas Fee</div>
+            <div class="name">{{ gasFee.avgGas }} Gwei</div>
           </div>
         </div>
+      </div>
+      <div class="title">
+        Your Transactions
       </div>
       <div
         v-if="userTransactions && userTransactions.length"
@@ -36,27 +44,25 @@
         <div
           v-for="userTransaction in userTransactions"
           :key="userTransaction.id"
-          class="card column center"
+          class="card column start"
         >
-          <div class="column center space-between">
-            <div class="name m-r-1">
-              From Address
-            </div>
+          <div class="column start space-between">
+            <div class="name">From Address</div>
             <div class="name">
               {{ userTransaction.attributes.from_address }}
             </div>
           </div>
-          <div class="column center space-between">
-            <div class="name m-r-1">
+          <div class="column start space-between">
+            <div class="name">
               To Address
             </div>
             <div class="name">
               {{ userTransaction.attributes.to_address }}
             </div>
           </div>
-          <div class="row center space-between">
+          <div class="column start space-between">
             <div class="name m-r-1">
-              Gass
+              Gas Fee
             </div>
             <div class="name">
               {{ userTransaction.attributes.gas }}
@@ -269,6 +275,7 @@ export default {
   letter-spacing: normal;
   text-align: left;
   color: var(--color-primary);
+  margin: 1rem;
 }
 
 .subtitle {
@@ -289,7 +296,9 @@ export default {
   margin-bottom: 2rem;
   // margin-right:  16.25rem;
   // width: 23.5rem;
-  width: 90%;
+  min-width: fit-content;
+  width: 100%;
+  max-width: 90%;
   height: fit-content;
   padding: 1rem;
   border-radius: 0.6rem;
@@ -298,6 +307,11 @@ export default {
   box-shadow: 0 3px 15px 0 var(--black-16);
   background-color: var(--card-bg);
   position: relative;
+
+  &.selected {
+    border-style: solid;
+    border-color: var(--color-primary);
+  }
 
   .row {
     width: 100%;

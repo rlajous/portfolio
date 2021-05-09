@@ -88,7 +88,5 @@ export default {
   router: {
     routes: ['/about', '/contact', '/', '/portfolio', '/recomendations'],
   },
-  generate: {
-    exclude: ['/recomendations'],
-  },
+  generate: {},
 }
