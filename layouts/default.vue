@@ -11,9 +11,13 @@
 
 <script>
 import Vue from 'vue'
+import moralis from 'moralis'
 import Nav from '~/components/Nav.vue'
 import Error from '~/components/modals/Error.vue'
 import Success from '~/components/modals/Success.vue'
+
+moralis.initialize(process.env.MORALIS_APPLICATION_ID)
+moralis.serverURL = process.env.MORALIS_SERVER_URL
 
 export default Vue.extend({
   components: {

@@ -1,7 +1,7 @@
 <template>
   <div class="content column center">
     <h1 class="header">
-      My Protfolio
+      My Portfolio
     </h1>
     <div class="section relative">
       <h2 class="title">
