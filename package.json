@@ -24,9 +24,9 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.12.17",
-    "@nuxtjs/axios": "5.12.1",
+    "@nuxtjs/axios": "5.13.1",
     "@nuxtjs/dotenv": "1.4.1",
-    "@nuxtjs/pwa": "3.0.0-beta.20",
+    "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/sitemap": "2.4.0",
     "cwebp": "^2.0.5",
     "moralis": "0.0.21",
@@ -35,7 +35,7 @@
     "vue-js-modal": "2.0.0-rc.6"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "2.0.2",
+    "@nuxt/typescript-build": "2.1.0",
     "@nuxtjs/color-mode": "^2.0.5",
     "@nuxtjs/eslint-config": "3.1.0",
     "@nuxtjs/eslint-module": "2.0.0",
@@ -56,11 +56,11 @@
     "jest": "26.1.0",
     "lint-staged": "10.2.11",
     "node-sass": "4.14.1",
-    "prettier": "2.0.5",
+    "prettier": "2.2.1",
     "pug": "3.0.0",
     "pug-plain-loader": "1.0.0",
     "sass-loader": "9.0.2",
-    "stylelint": "13.6.1",
+    "stylelint": "13.13.1",
     "vue-jest": "4.0.0-beta.4"
   }
 }
