@@ -35,6 +35,10 @@ export default {
       ssr: false,
     },
   ],
+  env: {
+    MORALIS_APPLICATION_ID: process.env.MORALIS_APPLICATION_ID,
+    MORALIS_SERVER_URL: process.env.MORALIS_SERVER_URL,
+  },
   /*
    ** Nuxt.js dev-modules
    */
