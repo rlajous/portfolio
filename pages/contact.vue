@@ -316,6 +316,10 @@ export default {
         text-align: left;
         color: var(--black);
         margin-bottom: 1.25rem;
+
+        &:focus {
+          border: solid 1px var(--color-primary);
+        }
       }
 
       .textarea {
@@ -335,6 +339,10 @@ export default {
         text-align: left;
         color: var(--black);
         margin-bottom: 2.5rem;
+
+        &:focus {
+          border: solid 1px var(--color-primary);
+        }
       }
 
       .button {
