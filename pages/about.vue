@@ -5,9 +5,9 @@
         About Me
       </h2>
       <h1 class="subtitle relative">
-        I am passionate with scuba, I love my two dogs, I love to draw. I am
-        currently takin theatre impro classes. I love the beach. I currently
-        live in Argentina and have Spanish passport. I work remotely
+        I am a Software Engineering student. With experience in the design,
+        installation, testing, and maintenance of web systems. I can effectively
+        self-manage independent projects and collaborate in a team environment.
       </h1>
     </div>
     <picture>

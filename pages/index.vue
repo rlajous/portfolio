@@ -72,7 +72,7 @@
         Hi
       </div>
       <h3 class="text">
-        I am passionate with scuba, I love my two dogs, I love to draw
+        I am a Software Engineering student.
       </h3>
     </div>
     <div class="buttons row space-between">
