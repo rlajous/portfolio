@@ -29,7 +29,7 @@
     "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/sitemap": "2.4.0",
     "cwebp": "^2.0.5",
-    "moralis": "0.0.21",
+    "moralis": "0.0.61",
     "nuxt": "2.14.0",
     "vue-burger-menu": "2.0.5",
     "vue-js-modal": "2.0.0-rc.6"
