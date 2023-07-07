@@ -60,7 +60,7 @@
     "pug": "3.0.0",
     "pug-plain-loader": "1.0.0",
     "sass-loader": "9.0.3",
-    "stylelint": "13.13.1",
+    "stylelint": "15.10.1",
     "vue-jest": "4.0.0-beta.4"
   }
 }
